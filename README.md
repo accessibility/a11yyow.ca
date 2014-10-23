@@ -1,3 +1,5 @@
+[![A11yYOW Logo](https://rawgithub.com/accessibility/a11yYOW.ca/master/logo.svg)](http://a11yYOW.ca)
+
 # A11yYOW Our Accessibility Unconference
 
 Ottawa's Second Accessibility Unconference will be held December 6th, 2014, at Carleton University.
