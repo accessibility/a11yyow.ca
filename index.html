@@ -4,7 +4,7 @@
 <title>2014 Ottawa Accessibility Unconference</title>
 
 <style media="screen">
-a, em, sup, h1, h2, h3 { font: inherit; font-style: inherit; font-weight: inherit; }
+a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
 body, header, footer, h1, h2, p { margin: 0; padding: 0;  }
 
@@ -61,8 +61,6 @@ h2 {
   text-align: center;
 }
 
-img.map { width: 500px; height: 500px; border-radius: 250px; display:block; margin: 50px auto; border: 2px solid transparent; background:hsla(0, 0%, 0%, 0.33); opacity: 0.66;}
-
 #sponsors {
   border-top: 2px solid hsla(0, 0%, 0%, 0.1);
   margin-top: -2px;
@@ -84,15 +82,10 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
   height: 100px;
 }
 
-#whereabouts {
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 50px;
-}
-
 #about_the_background_image {
   position: absolute;
   top: 100%;
-  padding: 5px 0; font-style: italic;
+  padding: 25px 0 0; font-style: italic;
   left: 0; right: 0;
 
 }
@@ -116,11 +109,11 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
 
   text-align: center;
   margin: auto;
-  max-width: 1900px;
-  height: 175px;
+  max-width: 1800px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 50px 0;
   box-sizing: content-box;
+  height: 150px;
   }
 
 #registration p {
@@ -143,7 +136,7 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
 #registration .price {
   position: absolute;
 
-  left: 50%; bottom: 50px;
+  left: 50%; bottom: 45px;
   margin-left: -55px;
   box-sizing: border-box;
   border: 4px double hsla(0, 0%, 0%, 0.66);
@@ -203,6 +196,43 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
   margin: 25px auto;
 }
 
+#whereabouts {
+  text-align: center;
+  margin: auto;
+  max-width: 1800px;
+  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
+  padding: 50px 0;
+  box-sizing: content-box;
+}
+
+img.map { width: 500px; height: 500px; border-radius: 250px; display:block; margin: 25px auto; border: 2px solid transparent; background:hsla(0, 0%, 0%, 0.33); opacity: 0.66;}
+
+
+
+#whereabouts p {
+  margin: 25px;
+}
+
+#whereabouts address {
+  position: absolute;
+  left: 50%;
+  margin-left: 300px;
+  bottom: 300px;
+  margin-bottom: -25px;
+  text-align: left;
+  width: 300px;
+}
+
+#whereabouts .building {
+  position: absolute;
+  right: 50%;
+  margin-right: 300px;
+  bottom: 300px;
+  margin-bottom: -25px;
+  text-align: right;
+  width: 300px;
+}
+
   </style>
 </head>
 
@@ -228,9 +258,7 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
 
   <div id="registration">
     <h2>Registration</h2>
-
     <span class="price"><span class="dollar symbol">$</span><strong class="dollar digits">21</strong><span class="cents">.49</span></span>
-
     <p>
       <a href="http://www.eventbrite.ca/e/a11yyow-2014-ottawas-accessibility-unconference-tickets-13470525705">Register at Eventbrite</a>
       to reserve your spot<br>and to commit your financial support.
@@ -243,8 +271,23 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
 
   <div id="whereabouts">
     <h2>Whereabouts</h2>
-    <p>The unconference will take place in the room #555 at the Human Computer Interaction Lab at Carleton University.</p>
+    <p>The Ottawa Accessibility Unconference will take place in <strong>Room #5110</strong><br> in the Human–Computer Interaction building at <a href="">Carleton University</a>.</p>
     <img alt="Terrain map centered on Carleton University" class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=Carleton+University,1125+Colonel+By+Drive,Ottawa,ON&zoom=14&scale=2&size=500x500&maptype=terrain&sensor=false&format=png">
+    <address>
+      <strong>Carleton University</strong><br>
+      1125 Colonel By Drive<br>
+      Ottawa ON&nbsp; K1S 5B6<br>
+      Canada
+    </address>
+    <div class="building">
+      <strong>Building Name</strong><br>
+      This section describes which building to go to and where it is in some details and such.
+    </div>
+
+    <div class="maps">
+      <a>Open this address in Goolge Maps</a><br>
+      <a>Open this address in OpenStreet Map</a>
+    </div>
   </div>
 
   <div id="contact">
@@ -258,13 +301,15 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
     </p>
   </div>
 
-
   <div id="sponsors">
     <h2>Sponsors</h2>
     <div id="openconcept">
       <a href="https://openconcept.ca/" target="openconcept">OpenConcept Consulting Inc.</a><br>
       OpenConcept is a Bytown B-Corporation specializing in accessibile Drupal websites for progressive causes.
       <a href="https://openconcept.ca/" target="openconcept"><img alt="OpenConcept Logo" src="kaS8uv06.png"></a>
+    </div>
+    <div id="openconcept">
+      1125@carleton.ca
     </div>
   </div>
 
