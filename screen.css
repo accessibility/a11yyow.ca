@@ -238,9 +238,17 @@ p span { white-space: nowrap;}
 
 #program {
   margin: auto;
-  max-width: 1800px;
+
+  max-width: 1250px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 49px 0 25px;
+}
+
+#program h2 {
+    position: absolute;
+  left: 0px;
+  top: 75px;
+
 }
 
 #program table {
@@ -274,20 +282,22 @@ p span { white-space: nowrap;}
 
 #program .date {
   text-align: left;
-  position: absolute; left: 100px; top: 100px;
+  position: absolute; left: 0px; top: 150px;
 }
 
 
 #proposals {
   padding: 50px;
   border: none;
-  max-width: 1280px;
+  max-width: 1250px;
   margin: auto;
 }
 
 #proposals h2 {
   position: absolute;
   left: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
   top: 75px;
 }
 
@@ -297,12 +307,13 @@ p span { white-space: nowrap;}
 }
 #proposals li {
   display: block;
-  padding: 25px 5px 0px;
+  padding: 25px 0px 0px;
   text-align: left;
+  margin: 0px 25px;
 }
 
 #proposals p {
-  padding: 25px 5px 0px 5px;
+  padding: 0px 25px;
 }
 
 #proposals p.foreword {
@@ -312,8 +323,9 @@ p span { white-space: nowrap;}
   right: 50%;
   left: 0;
   top: 100px;
-  margin-right: 100px;
-  margin-left: 0px;
+  margin-right: 25px;
+  margin-left: 25px;
+  padding: 25px 0 0;
 }
 #proposals p.afterword {
   text-align: left;
@@ -322,6 +334,7 @@ p span { white-space: nowrap;}
   right: 50%;
   left: 0;
   bottom: 50px;
-  margin-right: 100px;
-  margin-left: 0px;
+  margin-right: 25px;
+  margin-left: 25px;
+  padding: 25px 0 0;
 }
