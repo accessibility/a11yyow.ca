@@ -10,12 +10,14 @@ body, header, footer, h1, h2, p, sup { margin: 0; padding: 0; }
 
 /* Typography */
 
-body { font: 23px/25px "Cochin", "Constantia", serif; }
-h1 { font: 55px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
+body { font: 21px/25px "Cochin", "Constantia", serif; }
+h1 { font: 56px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
 h3 { font-size: 0; position: absolute; }
 sup { font-size: 50%; line-height: 0; }
 #summary, #about_the_background_image { font-style:italic; }
 body > header em { font-weight: bold; }
+
+#summary { font-size: 24px; line-height: 30px;}
 
 #sponsors { font: 21px/25px "Avenir", "Calibri", sans-serif; }
 
@@ -25,7 +27,11 @@ body > header em { font-weight: bold; }
 
 html { background: no-repeat linear-gradient(to bottom, hsl(100, 10%, 95%), hsl(195, 10%, 80%)); }
 body { color: hsla(0, 0%, 0%, 0.66); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
-h1, body > header em { color: black; }
+h1, strong, body > header em, body > div h2 { color: black; }
+
+
+body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
+#summary { color: hsla(0, 0%, 0%, 0.75); }
 
 body > header #about_the_background_image { transition: all 333ms linear; color: hsla(0, 0%, 0%, 0.33);}
 body > header:hover #about_the_background_image, #about_the_background_image:hover { color: hsla(0, 0%, 0%, 0.66);}
@@ -52,9 +58,9 @@ body > header h1 {
 
 #sponsors h2,
 body > header h2 {
-  font: 22px/25px "Cochin", "Helvetica", "Constantia", serif;
+  font: 21px/25px "Cochin", "Helvetica", "Constantia", serif;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   margin-bottom: 5px;
   text-rendering: geometricPrecision;
 }
@@ -70,7 +76,7 @@ body > header #about_the_background_image p {
 }
 
 body > header #summary {
-  position: absolute; top: 225px; left: 0; right: 0;
+  position: absolute; top: 220px; left: 0; right: 0;
 }
 
 
@@ -167,27 +173,28 @@ h2 {
   margin: auto;
 }
 
-#whereabouts p { margin: 25px; }
-#whereabouts img.map { width: 550px; height: 550px; border-radius: 300px; display:block; margin: 25px auto; border: 2px solid transparent; background:hsla(0, 0%, 0%, 0.33); opacity: 0.80;}
-
-#whereabouts address {
-  position: absolute;
-  left: 50%;
-  margin-left: 300px;
-  bottom: 300px;
-  margin-bottom: -25px;
-  text-align: left;
-  width: 300px;
-}
+#whereabouts p { margin: 25px auto; max-width: 1000px; }
+#whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 2px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); opacity: 0.8;}
+#whereabouts img.map { opacity: 0.8; }
 
 #whereabouts .building {
   position: absolute;
-  right: 50%;
-  margin-right: 300px;
-  bottom: 300px;
-  margin-bottom: -25px;
-  text-align: right;
-  width: 300px;
+  left: 50%;
+  margin-left: 275px;
+  bottom: 0px;
+  height: 316px;
+  text-align: left;
+  width: 400px;
+}
+
+#whereabouts .building > .line {
+  display: block;
+  border-top: 3px solid hsl(350, 100%, 60%);
+  left: -275px;
+  top: 11px;
+  padding-left: 270px;
+  position: absolute;
+  box-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.5);
 }
 
 #contact {
@@ -270,33 +277,36 @@ p span { white-space: nowrap;}
 
 <div id="whereabouts">
   <h2>Whereabouts</h2>
-  <p>Our unconference will take place inside <a href="http://www.carleton.ca/1125/">1125@CARLETON</a> – a modern living laboratory in the <span>Human Computer Interaction Building</span> at <a href="">Carleton University</a>.</p>
+  <p>Our unconference will unfold at <a href="http://www.carleton.ca/1125/"><strong>1125@CARLETON</strong></a> – a modern living laboratory<br>within the <span>Human Computer Interaction Building</span> at Carleton University.</p>
   <img alt="Terrain map centered on Carleton University" class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=45.380621,-75.699744&zoom=15&scale=2&size=600x600&maptype=hybrid&sensor=false&format=png">
-  <address>
-    <strong>Carleton University</strong><br>
-    1125 Colonel By Drive<br>
-    Ottawa ON&nbsp; K1S 5B6<br>
-    Canada
-  </address>
   <div class="building">
-    <strong>Building Name</strong><br>
-    5110 Human Computer Interaction Building
-    This section describes which building to go to and where it is in some details and such.
+    <div class="line"></div>
+    <strong>1125@CARLETON</strong>
+    <address>
+      Human Computer Interaction Building<br>
+      Carleton University<br>
+      1125 Colonel By Drive<br>
+      Ottawa, Ontario<br>
+      Canada
+    </address>
+    <br>
+    <a href="">Open in Google Maps</a><br>
+    <a href="">Open in OpenStreet Map</a>
   </div>
-  <div class="maps">
-    <a>Open this address in Goolge Maps</a><br>
-    <a>Open this address in OpenStreet Map</a>
-  </div>
+
 </div>
 
 <div id="contact">
   <h2>Contact Us</h2>
   <p id="mail_to">
-    Write to <a href="mailto:inbox@a11yYOW.ca">info@a11yYOW.ca</a> if you have questions about the event, if you would like to propose a discussion topic, if you require assistance getting to the event or if you can help us out for part of the day.
-    Your query will not go unanswered.
+    Write to <a href="mailto:inbox@a11yYOW.ca">info@a11yYOW.ca</a> if you have questions about the event, if you would like to propose a discussion topic, if you require assistance getting to the event or if you can help us out for part of the day.<br>
+
+  </p>
   <p>
+    Your query will not go unanswered.
+  </p>
   <p id="twitter">
-    And do tune into the <a href="https://twitter.com/a11yYOW">Accessibility Ottawa Twitter stream</a> to hear the <a href="https://twitter.com/search?f=realtime&q=a11yYOW&src=typd">latest chirps and murmors</a>.
+    And tune into the <a href="https://twitter.com/a11yYOW">Accessibility Ottawa Twitter Stream</a> to hear the <a href="https://twitter.com/search?f=realtime&q=a11yYOW&src=typd">latest chirps</a> about the event.
   </p>
 </div>
 
@@ -306,7 +316,6 @@ p span { white-space: nowrap;}
     <a href="https://openconcept.ca/" target="OpenConcept"><img alt="OpenConcept Logo" src="OpenConcept.png"></a>
     <a href="https://openconcept.ca/" target="OpenConcept">OpenConcept Consulting Inc.</a><br>
     The Bytown B-Corporation specializing in accessibile Drupal websites for progressive causes.
-
   </div>
   <div id="NNNN_AT_CARLETON">
     <a href="https://openconcept.ca/" target="NNNN_AT_CARLETON"><img alt="1125@CARLETON Wordmark" src="1125@CARLETON.png"></a><br>
