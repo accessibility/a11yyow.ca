@@ -8,7 +8,7 @@ body { font: 21px/25px "Cochin", "Constantia", serif; }
 h1 { font: 55px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
 h3 { font-size: 0; position: absolute; }
 sup { font-size: 50%; line-height: 0; }
-#summary, #about_the_background_image { font-style:italic; }
+#summary { font-style:italic; }
 body > header em { font-weight: bold; }
 
 #summary { font-size: 24px; line-height: 30px;}
@@ -27,13 +27,6 @@ h1, strong, body > header em, body > div h2 { color: black; }
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
 
-body > header #about_the_background_image { transition: all 333ms linear; color: hsla(0, 0%, 0%, 0.33);}
-body > header:hover #about_the_background_image, #about_the_background_image:hover { color: hsla(0, 0%, 0%, 0.66);}
-
-
-
-
-
 body {
   text-align: center;
 }
@@ -42,7 +35,7 @@ body > header {
   padding: 80px 50px;
   height: 1100px;
   max-width: 1800px;
-  margin: 0 auto 150px;
+  margin: auto;
 }
 
 body > header h1 {
@@ -60,13 +53,20 @@ body > header h2 {
 }
 
 body > header #about_the_background_image {
-  position: absolute; left: 0; right: 0; top: 100%; padding: 25px; height: 150px;
+  position: absolute; left: 0px; right: 50%; bottom: 0px; padding: 20px;
+  text-align: left;
+  color: hsl(65, 15%, 90%);
+  text-shadow: 0px 1px 2px black;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all 150ms linear;
+  opacity: 0.66;
 }
-
-body > header #about_the_background_image p {
-  max-width: 800px;
-  margin: auto;
-
+body > header #about_the_background_image:hover {
+  opacity: 1;
+}
+body > header #about_the_background_image a {
+  text-decoration: none;
 }
 
 body > header #summary {
