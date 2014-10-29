@@ -285,6 +285,11 @@ p span { white-space: nowrap;}
   margin: auto;
 }
 
+#proposals h2 {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+}
 
 #proposals ul, #proposals p {
   margin-left: 50%;
@@ -306,7 +311,7 @@ p span { white-space: nowrap;}
   margin: 0;
   right: 50%;
   left: 0;
-  top: 75px;
+  top: 100px;
   margin-right: 100px;
   margin-left: 0px;
 }
