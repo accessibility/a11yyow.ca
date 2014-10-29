@@ -8,7 +8,7 @@ body { font: 21px/25px "Cochin", "Constantia", serif; }
 h1 { font: 55px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
 h3 { font-size: 0; position: absolute; }
 sup { font-size: 50%; line-height: 0; }
-#summary { font-style:italic; }
+#summary, p.foreword, p.afterword { font-style:italic; }
 body > header em { font-weight: bold; }
 
 #summary { font-size: 25px; line-height: 30px;}
@@ -280,13 +280,43 @@ p span { white-space: nowrap;}
 
 #proposals {
   padding: 50px;
+  border: none;
+  max-width: 1280px;
+  margin: auto;
 }
 
 
-#proposals ul {
+#proposals ul, #proposals p {
   margin-left: 50%;
+  text-align: left;
 }
 #proposals li {
   display: block;
+  padding: 25px 5px 0px;
   text-align: left;
+}
+
+#proposals p {
+  padding: 25px 5px 0px 5px;
+}
+
+#proposals p.foreword {
+  text-align: left;
+  position: absolute;
+  margin: 0;
+  right: 50%;
+  left: 0;
+  top: 75px;
+  margin-right: 100px;
+  margin-left: 0px;
+}
+#proposals p.afterword {
+  text-align: left;
+  position: absolute;
+  margin: 0;
+  right: 50%;
+  left: 0;
+  bottom: 50px;
+  margin-right: 100px;
+  margin-left: 0px;
 }
