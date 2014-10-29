@@ -241,7 +241,6 @@ p span { white-space: nowrap;}
   max-width: 1800px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 49px 0 25px;
-
 }
 
 #program table {
@@ -257,6 +256,7 @@ p span { white-space: nowrap;}
 
 #program table td:first-child {
   text-align: right;
+
 }
 #program table td:last-child {
   text-align: left;
@@ -267,7 +267,9 @@ p span { white-space: nowrap;}
   letter-spacing: 6px;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: hsla(195, 100%, 15%, 0.75);
+  font-size:19px;
+  padding-top: 1px;
 }
 
 #program .date {
