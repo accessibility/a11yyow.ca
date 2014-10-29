@@ -57,7 +57,7 @@ body > header #summary {
 }
 
 body > header #about_the_background_image {
-  position: absolute; left: 0px; right: 50%; bottom: 0px; padding: 20px;
+  position: absolute; left: 0px; bottom: 0px; padding: 10px;
   text-align: left;
   color: hsl(65, 15%, 90%);
   text-shadow: 0px 1px 2px black;
