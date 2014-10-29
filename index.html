@@ -6,51 +6,73 @@
 <style media="screen">
 a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
-body, header, footer, h1, h2, p { margin: 0; padding: 0;  }
+body, header, footer, h1, h2, p, sup { margin: 0; padding: 0; }
 
-html {
-  background: no-repeat linear-gradient(to bottom, hsl(60, 15%, 80%), hsl(50, 5%, 66%));
+/* Typography */
 
-}
+body { font: 23px/25px "Cochin", "Constantia", serif; }
+h1 { font: 55px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
+h3 { font-size: 0; position: absolute; }
+sup { font-size: 50%; line-height: 0; }
+#summary, #about_the_background_image { font-style:italic; }
+body > header em { font-weight: bold; }
+
+#sponsors { font: 21px/25px "Avenir", "Calibri", sans-serif; }
+
+
+
+/* Paint */
+
+html { background: no-repeat linear-gradient(to bottom, hsl(100, 10%, 95%), hsl(195, 10%, 80%)); }
+body { color: hsla(0, 0%, 0%, 0.66); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
+h1, body > header em { color: black; }
+
+body > header #about_the_background_image { transition: all 333ms linear; color: hsla(0, 0%, 0%, 0.33);}
+body > header:hover #about_the_background_image, #about_the_background_image:hover { color: hsla(0, 0%, 0%, 0.66);}
+
+
+
+
 
 body {
-  background: top center no-repeat url(CHAUDIEREFALLS.jpg);
-  color: hsla(0, 0%, 0%, 0.66);
-  font: 23px/25px "Cochin", "Helvetica", "Constantia", serif;
+  text-align: center;
 }
 
 body > header {
-  padding: 100px 50px; text-align: center;
-  height: 1180px;
-  max-width: 1900px;
+  padding: 80px 50px;
+  height: 1100px;
+  max-width: 1800px;
   margin: 0 auto 150px;
 }
-body > footer { text-align: center;}
-
-h3 { font-size: 0; position: absolute; }
-
-sup { font-size: 50%; line-height: 0; margin: 0;}
 
 body > header h1 {
   color: black;
-  font: 54px/60px "Cochin", "Helvetica", "Constantia", serif;
-  font-weight: bold;
-  text-rendering: geometricPrecision;
-  letter-spacing: -1px;
   margin-bottom: 5px;
 }
 
+#sponsors h2,
 body > header h2 {
-  font: 21px/25px "Cochin", "Helvetica", "Constantia", serif;
+  font: 22px/25px "Cochin", "Helvetica", "Constantia", serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 5px;
   text-rendering: geometricPrecision;
 }
-body > header em {
-  font-weight: bold;
-  color: black;
+
+body > header #about_the_background_image {
+  position: absolute; left: 0; right: 0; top: 100%; padding: 25px; height: 150px;
 }
+
+body > header #about_the_background_image p {
+  max-width: 800px;
+  margin: auto;
+
+}
+
+body > header #summary {
+  position: absolute; top: 225px; left: 0; right: 0;
+}
+
 
 a[href] { color: inherit; white-space: nowrap; }
 
@@ -61,60 +83,14 @@ h2 {
   text-align: center;
 }
 
-#sponsors {
-  border-top: 2px solid hsla(0, 0%, 0%, 0.1);
-  margin-top: -2px;
-  padding: 50px 50px 0;
-  font: 20px/25px "Avenir", sans-serif;
-  background: hsl(195, 15%, 66%);
-  color: hsla(0, 0%, 0%, 0.66);
-  text-align:center;
-}
-
-#openconcept {
-  padding: 125px 50px 50px;
-  text-align: center;
-}
-#openconcept img {
-  position: absolute; left: 50%; top: 25px;
-  margin-left: -60px;
-  width: 100px;
-  height: 100px;
-}
-
-#about_the_background_image {
-  position: absolute;
-  top: 100%;
-  padding: 25px 0 0; font-style: italic;
-  left: 0; right: 0;
-
-}
-#about_the_background_image p {
-  max-width: 800px;
-  margin: auto;
-  color: hsla(0, 0%, 0%, 0.33);
-}
-
-#summary {
-  position: absolute; top: 250px; left: 0; right: 0; text-align:center;
-  font-style: italic;
-}
-#twitter {
-}
-#write {
-}
-
 #registration {
-  /*position: absolute;  top: 275px; left: 50%; right: 25px;*/
-
-  text-align: center;
   margin: auto;
   max-width: 1800px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 50px 0;
+  padding: 49px 0 50px;
   box-sizing: content-box;
   height: 150px;
-  }
+}
 
 #registration p {
   position: absolute;
@@ -124,6 +100,7 @@ h2 {
   bottom: 75px;
   width: 500px;
 }
+
 #registration p:last-child {
   position: absolute;
   text-align: left;
@@ -135,7 +112,6 @@ h2 {
 
 #registration .price {
   position: absolute;
-
   left: 50%; bottom: 45px;
   margin-left: -55px;
   box-sizing: border-box;
@@ -145,7 +121,6 @@ h2 {
   width: 110px;
   border-radius: 100px;
   line-height: 105px;
-
   text-rendering: geometricPrecision;
 }
 
@@ -185,33 +160,15 @@ h2 {
   color: hsla(0, 0%, 100%, 0.95);
 }
 
-#contact {
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-
-  padding: 50px;
-}
-#contact p {
-  max-width: 1025px;
-  text-align: center;
-  margin: 25px auto;
-}
-
 #whereabouts {
-  text-align: center;
-  margin: auto;
   max-width: 1800px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 50px 0;
-  box-sizing: content-box;
+  padding: 49px 0 50px;
+  margin: auto;
 }
 
-img.map { width: 500px; height: 500px; border-radius: 250px; display:block; margin: 25px auto; border: 2px solid transparent; background:hsla(0, 0%, 0%, 0.33); opacity: 0.66;}
-
-
-
-#whereabouts p {
-  margin: 25px;
-}
+#whereabouts p { margin: 25px; }
+#whereabouts img.map { width: 500px; height: 500px; border-radius: 250px; display:block; margin: 25px auto; border: 2px solid transparent; background:hsla(0, 0%, 0%, 0.33); opacity: 0.66;}
 
 #whereabouts address {
   position: absolute;
@@ -233,85 +190,134 @@ img.map { width: 500px; height: 500px; border-radius: 250px; display:block; marg
   width: 300px;
 }
 
-  </style>
+#contact {
+  margin: auto;
+  max-width: 1800px;
+  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
+  padding: 49px 0 50px;
+}
+#contact p {
+  max-width: 1025px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+#sponsors {
+  padding: 50px 0px 0;
+  font: 19px/25px "AvenirNext-Regular", sans-serif;
+}
+
+#sponsors h2 {
+  padding: 0px 0px 4px;
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.33);
+  width: 33%;
+  margin: auto;
+}
+
+#OpenConcept {
+  padding: 150px 50px 50px; text-align: center;
+  color: hsla(0, 0%, 0%, 0.66);
+}
+#OpenConcept a {
+  font-family: "AvenirNext-DemiBold", sans-serif;
+}
+#OpenConcept img { position: absolute; left: 50%; top: 40px; margin-left: -100px; height: 100px; }
+
+#NNNN_AT_CARLETON {
+  background: black;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 50px 0 100px;
+  font: 19px/25px "AvenirNext-UltraLight", sans-serif;
+}
+
+#NNNN_AT_CARLETON img {
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+p span { white-space: nowrap;}
+
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>Ottawa Accessibility Unconference</h1>
-    <h2><time><em>Saturday, December 6<sup>th</sup> 2014</em> from <em>8:30 <abbr>AM</abbr></em> until <em>5:00 <abbr>PM</abbr></em></time></h2>
-    <h2>At Carleton University</h2>
-    <p id="summary">
-      Join us for a day of informal discussions, demonstrations &amp; debates about access to artifacts our digital age.<br>
-      Admission is free &amp; everyone is invited.
-    </p>
-    <div id="about_the_background_image">
-      <h3>Cover Image</h3>
-      <p>
-        Lithograph of Chaudiere Falls on the Ottawa River by C. Ingrey.<br>
-        Created around 1830 (estimate) from a sketch made by an Officer of the Royal Staff Corps,<br>
-        prior to the erection of the bridges thrown over the falls in 1827.<br>
-        <a href="http://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMDC-PICTURES-R-805&R=DC-PICTURES-R-805">More details at the Toronto Public Library</a>.
-      </p>
-    </div>
-  </header>
-
-  <div id="registration">
-    <h2>Registration</h2>
-    <span class="price"><span class="dollar symbol">$</span><strong class="dollar digits">21</strong><span class="cents">.49</span></span>
+<header>
+  <h1>Ottawa Accessibility Unconference</h1>
+  <h2><time><em>Saturday, December 6<sup>th</sup> 2014</em> from <em>8:30 <abbr>AM</abbr></em> until <em>5:00 <abbr>PM</abbr></em></time></h2>
+  <h2>At Carleton University</h2>
+  <p id="summary">
+    Join us for a day of informal discussions, demonstrations &amp; debates about access to artifacts our digital age.<br>
+    Admission is free &amp; everyone is invited.
+  </p>
+  <div id="about_the_background_image">
+    <h3>Cover Image</h3>
     <p>
-      <a href="http://www.eventbrite.ca/e/a11yyow-2014-ottawas-accessibility-unconference-tickets-13470525705">Register at Eventbrite</a>
-      to reserve your spot<br>and to commit your financial support.
-    </p>
-    <p>
-      <em>Registered participants will receive lunch &amp; a t-shirt.</em><br>
-      <em>Early registration discount ends on November 22.</em>
+      Lithograph of Chaudiere Falls on the Ottawa River by C. Ingrey.<br>
+      Created around 1830 (estimate) from a sketch made by an Officer of the Royal Staff Corps,<br>
+      prior to the erection of the bridges thrown over the falls in 1827.<br>
+      <a href="http://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMDC-PICTURES-R-805&R=DC-PICTURES-R-805">More details at the Toronto Public Library</a>.
     </p>
   </div>
+</header>
 
-  <div id="whereabouts">
-    <h2>Whereabouts</h2>
-    <p>The Ottawa Accessibility Unconference will take place in <strong>Room #5110</strong><br> in the Human–Computer Interaction building at <a href="">Carleton University</a>.</p>
-    <img alt="Terrain map centered on Carleton University" class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=Carleton+University,1125+Colonel+By+Drive,Ottawa,ON&zoom=14&scale=2&size=500x500&maptype=terrain&sensor=false&format=png">
-    <address>
-      <strong>Carleton University</strong><br>
-      1125 Colonel By Drive<br>
-      Ottawa ON&nbsp; K1S 5B6<br>
-      Canada
-    </address>
-    <div class="building">
-      <strong>Building Name</strong><br>
-      This section describes which building to go to and where it is in some details and such.
-    </div>
+<div id="registration">
+  <h2>Registration</h2>
+  <span class="price"><span class="dollar symbol">$</span><strong class="dollar digits">21</strong><span class="cents">.49</span></span>
+  <p>
+    <a href="http://www.eventbrite.ca/e/a11yyow-2014-ottawas-accessibility-unconference-tickets-13470525705">Register at Eventbrite</a>
+    to reserve your spot<br>and to commit your financial support.
+  </p>
+  <p>
+    <em>Registered participants will receive lunch &amp; a t-shirt.</em><br>
+    <em>Early registration discount ends on November 22.</em>
+  </p>
+</div>
 
-    <div class="maps">
-      <a>Open this address in Goolge Maps</a><br>
-      <a>Open this address in OpenStreet Map</a>
-    </div>
+<div id="whereabouts">
+  <h2>Whereabouts</h2>
+  <p>Our unconference will take place inside <a href="http://www.carleton.ca/1125/">1125@carleton</a> – a modern living laboratory in the <span>Human–Computer Interaction Building</span> at <a href="">Carleton University</a>.</p>
+  <img alt="Terrain map centered on Carleton University" class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=Carleton+University,1125+Colonel+By+Drive,Ottawa,ON&zoom=14&scale=2&size=500x500&maptype=terrain&sensor=false&format=png">
+  <address>
+    <strong>Carleton University</strong><br>
+    1125 Colonel By Drive<br>
+    Ottawa ON&nbsp; K1S 5B6<br>
+    Canada
+  </address>
+  <div class="building">
+    <strong>Building Name</strong><br>
+    5110 Human Computer Interaction Building
+    This section describes which building to go to and where it is in some details and such.
   </div>
-
-  <div id="contact">
-    <h2>Contact Us</h2>
-    <p id="mail_to">
-      Write to <a href="mailto:inbox@a11yYOW.ca">info@a11yYOW.ca</a> if you have questions about the event, if you would like to propose a discussion topic, if you require assistance getting to the event or if you can help us out for part of the day.
-      Your query will not go unanswered.
-    <p>
-    <p id="twitter">
-      And do tune into the <a href="https://twitter.com/a11yYOW">Accessibility Ottawa Twitter stream</a> to hear the <a href="https://twitter.com/search?f=realtime&q=a11yYOW&src=typd">latest chirps and murmors</a>.
-    </p>
+  <div class="maps">
+    <a>Open this address in Goolge Maps</a><br>
+    <a>Open this address in OpenStreet Map</a>
   </div>
+</div>
 
-  <div id="sponsors">
-    <h2>Sponsors</h2>
-    <div id="openconcept">
-      <a href="https://openconcept.ca/" target="openconcept">OpenConcept Consulting Inc.</a><br>
-      OpenConcept is a Bytown B-Corporation specializing in accessibile Drupal websites for progressive causes.
-      <a href="https://openconcept.ca/" target="openconcept"><img alt="OpenConcept Logo" src="kaS8uv06.png"></a>
-    </div>
-    <div id="openconcept">
-      1125@carleton.ca
-    </div>
+<div id="contact">
+  <h2>Contact Us</h2>
+  <p id="mail_to">
+    Write to <a href="mailto:inbox@a11yYOW.ca">info@a11yYOW.ca</a> if you have questions about the event, if you would like to propose a discussion topic, if you require assistance getting to the event or if you can help us out for part of the day.
+    Your query will not go unanswered.
+  <p>
+  <p id="twitter">
+    And do tune into the <a href="https://twitter.com/a11yYOW">Accessibility Ottawa Twitter stream</a> to hear the <a href="https://twitter.com/search?f=realtime&q=a11yYOW&src=typd">latest chirps and murmors</a>.
+  </p>
+</div>
+
+<div id="sponsors">
+  <h2>Sponsors</h2>
+  <div id="OpenConcept">
+    <a href="https://openconcept.ca/" target="OpenConcept"><img alt="OpenConcept Logo" src="OpenConcept.png"></a>
+    <a href="https://openconcept.ca/" target="OpenConcept">OpenConcept Consulting Inc.</a><br>
+    The Bytown B-Corporation specializing in accessibile Drupal websites for progressive causes.
+
   </div>
+  <div id="NNNN_AT_CARLETON">
+    <a href="https://openconcept.ca/" target="NNNN_AT_CARLETON"><img alt="1125@CARLETON Wordmark" src="1125@CARLETON.png"></a><br>
+    An experimental, collaborative virtual &amp; physical space for problem solving.
+  </div>
+</div>
 
-  <footer></footer>
+<footer></footer>
 </body>
