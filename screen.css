@@ -1,6 +1,6 @@
 a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
-body, header, footer, h1, h2, p, sup { margin: 0; padding: 0; }
+body, header, footer, h1, h2, p, sup, ul, li { margin: 0; padding: 0; }
 
 /* Typography */
 
@@ -275,4 +275,18 @@ p span { white-space: nowrap;}
 #program .date {
   text-align: left;
   position: absolute; left: 100px; top: 100px;
+}
+
+
+#proposals {
+  padding: 50px;
+}
+
+
+#proposals ul {
+  margin-left: 50%;
+}
+#proposals li {
+  display: block;
+  text-align: left;
 }
