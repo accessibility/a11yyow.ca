@@ -6,10 +6,10 @@ document.body.addEventListener "focusin", (event) ->
     filtered[0]
   else
     event.target
-  element.classList.add("focused")
+  element.classList.add("activated")
 
 document.body.addEventListener "focusout", (event) ->
-  element.classList.remove("focused") for element in document.getElementsByClassName("focused")
+  element.classList.remove("activated") for element in document.getElementsByClassName("activated")
 
 proposalsContainer = document.body.querySelector("#proposals_container")
 proposalsContainer.scrollLeft = proposalsContainer.scrollWidth

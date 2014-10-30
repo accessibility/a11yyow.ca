@@ -14,16 +14,16 @@
     })()), filtered = parents.filter(function(element) {
       return element.classList.contains("proposal");
     }), filtered[0]) : event.target;
-    return element.classList.add("focused");
+    return element.classList.add("activated");
   });
 
   document.body.addEventListener("focusout", function(event) {
     var element, _i, _len, _ref, _results;
-    _ref = document.getElementsByClassName("focused");
+    _ref = document.getElementsByClassName("activated");
     _results = [];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       element = _ref[_i];
-      _results.push(element.classList.remove("focused"));
+      _results.push(element.classList.remove("activated"));
     }
     return _results;
   });

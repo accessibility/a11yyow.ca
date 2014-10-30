@@ -355,7 +355,7 @@ div.proposal {
   box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.5);
 }
 
-div.proposal.focused {
+div.proposal.activated {
   transform: scale(1,1);
   z-index: 1;
   transition: transform 99ms linear, z-index 1ms linear;
