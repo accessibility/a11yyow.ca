@@ -11,7 +11,7 @@
         element.classList.remove("activated");
       }
     }
-    element = /_input/.test(event.target.id) ? (element = event.target, parents = ((function() {
+    element = /_input|mail_to_output/.test(event.target.id) ? (element = event.target, parents = ((function() {
       var _ref1, _results;
       _results = [];
       while ((_ref1 = element.parentNode) != null ? _ref1.classList : void 0) {
@@ -24,19 +24,6 @@
     return element.classList.add("activated");
   });
 
-  document.body.addEventListener("focusout", function(event) {
-    var element, _i, _len, _ref, _results;
-    _ref = document.getElementsByClassName("activated");
-    _results = [];
-    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-      element = _ref[_i];
-      if (element != null ? element.classList : void 0) {
-        _results.push(element.classList.remove("activated"));
-      }
-    }
-    return _results;
-  });
-
   proposalsContainer = document.body.querySelector("#proposals_container");
 
   proposalsContainer.scrollLeft = proposalsContainer.scrollWidth;
@@ -44,5 +31,16 @@
   proposals = document.body.querySelectorAll("#proposals_container article.proposal");
 
   document.body.querySelector("#proposals_container div.surface").style.width = (proposals.length * 355) + "px";
+
+  document.body.addEventListener("click", function(event) {
+    if (/commit_input/.test(event.target.id)) {
+      event.target.classList.add("activated");
+      console.info(event.target.parentNode.querySelector("a[href^=mailto]"));
+    }
+    if (/mail_to_output/.test(event.target.id)) {
+      event.preventDefault();
+      return event.target.parentNode.focus();
+    }
+  });
 
 }).call(this);

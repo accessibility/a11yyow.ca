@@ -16,7 +16,7 @@ h4 { font: bold 32px/30px "Cochin", "Baskerville", "Constantia", "Palatino", ser
 h5 { display: inline; }
 body > header h2, #sponsors > h2, #schedule table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
-#summary, div.foreword em, p.afterword, article.proposal h2 { font-style:italic; }
+#summary, div.foreword em, #contact p em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
 article.proposal h2 { font-size: 25px; line-height: 30px; font-weight: normal; letter-spacing: 0; text-rendering: geometricPrecision;}
 #sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
