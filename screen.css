@@ -25,7 +25,7 @@ article.proposal h2 { font-size: 25px; line-height: 30px; font-weight: normal; l
 /* Paint */
 
 html { background: no-repeat linear-gradient(to bottom, hsl(0, 0%, 33%), hsl(0, 0%, 15%)); }
-body { color: hsla(0, 0%, 0%, 0.75); background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); max-width: 1800px; margin: auto; }
+body { color: hsla(0, 0%, 0%, 0.75); background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); max-width: 1800px; margin: auto; box-shadow: 0px 1px 25px hsla(0, 0%, 0%, 0.33);}
 h1, strong, body > header em, body > div[id] > h2 { color: black; }
 h5 { color: hsla(0, 0%, 0%, 0.33); }
 body > header { background: top center no-repeat url(CHAUDIEREFALLS.jpg) black; }
@@ -34,10 +34,10 @@ body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px 
 
 /* Layout */
 
-body > header { padding: 75px 50px; height: 1000px; margin: -25px auto 0; }
+body > header { padding: 75px 50px; height: 1000px; margin:auto; }
 
 @media screen and (min-height: 1100px) and (min-width: 1800px) {
-  body { margin: 2% auto 1%; }
+  body { margin: 15px auto; }
 }
 
 body > header #summary {
