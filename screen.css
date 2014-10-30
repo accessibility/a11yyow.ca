@@ -24,7 +24,6 @@ html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0
 body { color: hsla(0, 0%, 0%, 0.75); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
 h1, strong, body > header em, body > div h2 { color: black; }
 
-
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
 
@@ -33,7 +32,7 @@ body {
 }
 
 body > header {
-  padding: 80px 50px;
+  padding: 75px 50px;
   height: 1100px;
   max-width: 1800px;
   margin: auto;
