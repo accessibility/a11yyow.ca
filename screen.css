@@ -14,10 +14,7 @@ sup { font-size: 50%; line-height: 0; }
 body > header em { font-weight: bold; }
 body > header h2, #sponsors > h2 { font: 21px/25px "Baskerville", "Cochin", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 5px; text-rendering: geometricPrecision; }
 #summary { font-size: 25px; line-height: 30px; }
-#sponsors div { font: 19px/25px "AvenirNext", "Calibri", sans-serif; }
-
-
-
+#sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
 
 /* Paint */
 
@@ -225,37 +222,23 @@ a[href] { color: inherit; white-space: nowrap; }
   opacity: 0.66;
 }
 
-#OpenConcept { padding: 155px 50px 50px; text-align: center; color: hsla(0, 0%, 0%, 0.66);
-  background: hsl(195, 10%, 90%);
- }
-#OpenConcept a { font-family: "AvenirNext-DemiBold", sans-serif; }
+#OpenConcept { padding: 155px 50px 50px; text-align: center; color: hsla(0, 0%, 0%, 0.66); background: hsl(195, 10%, 90%); }
 #OpenConcept img { position: absolute; left: 50%; top: 40px; margin-left: -100px; height: 100px; }
 
-#NNNN_AT_CARLETON {
-  background: black;
-  color: hsla(0, 0%, 100%, 0.5);
-  padding: 50px;
-}
-#NNNN_AT_CARLETON img {
-  height: 120px;
-  margin-bottom: 5px;
-}
-
-
+#NNNN_AT_CARLETON { background: black; color: hsl(0, 0%, 50%); padding: 50px; }
+#NNNN_AT_CARLETON img { height: 120px; margin-bottom: 5px; }
 
 #program {
   margin: auto;
-
   max-width: 1250px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 49px 0 25px;
 }
 
 #program h2 {
-    position: absolute;
+  position: absolute;
   left: 0px;
   top: 75px;
-
 }
 
 #program table {
