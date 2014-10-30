@@ -321,6 +321,7 @@ article.proposal {
   padding: 124px 44px 44px;
   text-align: left;
   transform: scale(0.5,0.5) translate(0px, 300px);
+  -webkit-transform: scale(0.5,0.5) translate(0px, 300px);
   z-index: 0;
   transition: all 222ms ease-out, z-index 1ms linear;
   cursor: default;
@@ -329,6 +330,7 @@ article.proposal {
 article.proposal.activated {
   background: white;
   transform: scale(1,1) translate(0px, 0px);
+  -webkit-transform: scale(1,1) translate(0px, 0px);
   z-index: 1;
   transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
