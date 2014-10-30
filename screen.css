@@ -34,9 +34,9 @@ body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px 
 
 /* Layout */
 
-body > header { padding: 75px 50px; height: 1000px; margin:auto; }
+body > header { padding: 75px 50px; height: 1125px; margin:auto; }
 
-@media screen and (min-height: 1100px) and (min-width: 1800px) {
+@media screen and (min-height: 1125px) and (min-width: 1800px) {
   body { margin: 15px auto; }
 }
 
