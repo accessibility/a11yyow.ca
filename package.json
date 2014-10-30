@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  },
+  "scripts": {
+    "start": "coffee --watch --compile window.coffee"
+  }
+}
