@@ -19,7 +19,7 @@ body > header h2, #sponsors > h2 { font: 21px/25px "Baskerville", "Cochin", "Pal
 /* Paint */
 
 html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); }
-body { color: hsla(0, 0%, 0%, 0.66); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
+body { color: hsla(0, 0%, 0%, 0.75); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
 h1, strong, body > header em, body > div h2 { color: black; }
 
 
@@ -59,7 +59,7 @@ body > header #about_the_background_image {
   font-size: 15px;
   line-height: 20px;
   transition: all 150ms linear;
-  opacity: 0.66;
+  opacity: 0.5;
 }
 body > header #about_the_background_image:hover {
   opacity: 1;
