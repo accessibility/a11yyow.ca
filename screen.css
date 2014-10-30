@@ -284,11 +284,13 @@ body > header #about_the_background_image a {
   max-width: 1800px;
   text-align: left;
   margin: auto;
-  padding: 150px 800px 0 50px;
+  padding: 150px 50px 0 50px;
   z-index: 1;
 }
 #proposals > div.foreword p {
   margin-top: 25px;
+  width: 36%;
+  max-width: 575px;
 }
 
 #proposals_container {
@@ -376,6 +378,7 @@ article.proposal label {
   height: 40px;
   line-height: 40px;
   margin-bottom: 25px;
+  width: 100%;
 }
 #audience_input {
   min-height: 50px;
