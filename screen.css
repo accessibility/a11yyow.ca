@@ -20,7 +20,7 @@ body > header h2 em { font-weight: bold; }
 #summary, div.foreword em, #contact p em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
 article.proposal h2 { font-size: 25px; line-height: 30px; font-weight: normal; letter-spacing: 0; text-rendering: geometricPrecision;}
-#sponsors div, body > footer { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
+#sponsors div, body > footer, #about_the_background_image { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
 
 /* Paint */
 
@@ -37,28 +37,17 @@ body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px 
 body > header { padding: 75px 50px; height: 1125px; margin:auto; }
 
 @media screen and (min-height: 1100px) and (min-width: 1800px) {
-  body { margin: 15px auto; }
+  body { margin: 25px auto; }
 }
 
 body > header #summary {
   position: absolute; top: 215px; left: 0; right: 0;
 }
 
-body > header #about_the_background_image {
-  position: absolute; left: 0px; bottom: 0px; padding: 10px;
-  text-align: left;
-  color: hsl(65, 15%, 90%);
-  text-shadow: 0px 1px 2px black;
-  font-size: 15px;
-  line-height: 20px;
-  transition: all 222ms ease-out;
-  opacity: 0.5;
-}
-body > header #about_the_background_image:hover {
-  opacity: 1;
-}
-body > header #about_the_background_image a {
-  text-decoration: none;
+#about_the_background_image {
+  background: black;
+  color: hsl(65, 0%, 50%);
+  padding: 25px 25px 5px;
 }
 
 
@@ -177,7 +166,10 @@ body > header #about_the_background_image a {
 #whereabouts div.destination div.outbound { margin-top: 12px; }
 
 #contact { padding: 25px; margin: 25px auto; max-width: 1250px; }
-#contact p { max-width: 800px; text-align: center; margin: 25px auto; }
+#contact p.foreword { margin: 0 0 25px; }
+#contact p.afterword { margin: 25px 0 0;}
+#contact h2 { margin: 0; }
+#contact #twitter { margin: 75px 0 0; }
 
 #sponsors { padding: 100px 0px 0; font: 19px/25px "AvenirNext-Regular", sans-serif; }
 
