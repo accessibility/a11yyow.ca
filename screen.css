@@ -33,10 +33,10 @@ body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px 
 
 /* Layout */
 
-body > header { padding: 75px 50px; height: 1050px; max-width: 1800px; margin: auto; }
+body > header { padding: 75px 50px; height: 1000px; max-width: 1800px; margin: auto; }
 
 @media screen and (min-height: 1100px) and (min-width: 1800px) {
-  body > header { margin-top: 1.6%; }
+  body > header { margin-top: 1.4%; }
 }
 
 body > header #summary {
@@ -284,7 +284,7 @@ body > header #about_the_background_image a {
 }
 #proposals_container div.surface {
   width: 9999px;
-  height: 875px;
+  height: 900px;
   overflow: hidden;
   padding: 25px 16.5% 25px;
   box-sizing: content-box;
@@ -295,7 +295,7 @@ article.proposal {
   background: hsl(0, 0%, 97%);
   outline: none;
   width: 700px;
-  height: 825px;
+  height: 850px;
   margin: 0 -175px;
   display: inline-block;
   vertical-align: top;
@@ -358,9 +358,12 @@ article.proposal.activated h2 {
 
 article.proposal h4 {
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 45px; right: 45px;
   height: 60px;
+}
+article.new.proposal h4 {
+  top: 45px;
 }
 
 article.proposal pre {
@@ -402,11 +405,11 @@ article.proposal label {
   margin-bottom: 25px;
 }
 #abstract_input {
-  min-height: 275px;
+  min-height: 325px;
   margin-bottom: 25px;
 }
 #biography_input {
-  min-height: 100px;
+  min-height: 75px;
 }
 
 div.commit {
