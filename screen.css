@@ -1,6 +1,7 @@
 a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
 body, header, footer, h1, h2, p, sup, ul, li { margin: 0; padding: 0; }
+p span, span.line { white-space: nowrap; }
 
 /* Typography */
 
@@ -162,31 +163,48 @@ h2 {
 }
 
 #whereabouts {
-  max-width: 1800px;
+  max-width: 1250px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 49px 0 50px;
   margin: auto;
 }
 
 #whereabouts p { margin: 25px auto; max-width: 1000px; }
-#whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 2px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); opacity: 0.8;}
-#whereabouts img.map { opacity: 0.8; }
-
-#whereabouts .building {
-  position: absolute;
-  left: 50%;
-  margin-left: 275px;
-  bottom: 0px;
-  height: 316px;
-  text-align: left;
-  width: 400px;
+#whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 1px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); opacity: 0.8;}
+#whereabouts img.map { opacity: 1;
+  box-sizing: border-box;
 }
 
-#whereabouts .building > .line {
+#whereabouts div.destination div.outbound {
+  margin-top: 12px;
+}
+
+#whereabouts div.destination {
+  padding-top: 238px;
+  position: absolute;
+  left: 50%;
+  right: 25px;
+  margin-left: 275px;
+  bottom: 50px;
+  height: 500px;
+  text-align: left;
+}
+
+#whereabouts div.destination img.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 220px;
+  width: 100%;
+  border: 1px solid hsla(0, 0%, 0%, 0.5);
+  box-sizing: border-box;
+}
+
+#whereabouts div.destination > .line {
   display: block;
-  border-top: 3px solid hsl(350, 100%, 60%);
+  border-top: 2px solid hsl(350, 100%, 60%);
   left: -275px;
-  top: 11px;
+  top: 249px;
   padding-left: 270px;
   position: absolute;
   box-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.5);
@@ -234,7 +252,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-p span { white-space: nowrap;}
+
 
 #program {
   margin: auto;
