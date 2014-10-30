@@ -1,5 +1,5 @@
 a, em, sup, h1, h2, h3, h4, h5, address, pre, input, textarea, button { font: inherit; font-style: inherit; font-weight: inherit; }
-body, header, footer, div, input, textarea, button { position: relative; box-sizing: border-box; }
+body, header, footer, div, input, textarea, button { position: relative; box-sizing: border-box; background: none; }
 body, header, footer, h1, h2, h3, h4, h5, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
@@ -270,8 +270,12 @@ a[href] { color: inherit; white-space: nowrap; }
 
 
 #proposals {
+  /*background: linear-gradient(to bottom, hsl(65, 18%, 90%), hsl(185, 1%, 75%));*/
   border: none;
   margin: 0;
+  height: 750px;
+  margin-top: -100px;
+  overflow: visible;
 }
 
 #proposals > h2 {
@@ -279,16 +283,16 @@ a[href] { color: inherit; white-space: nowrap; }
   left: 0px;
   margin-left: 25px;
   margin-right: 25px;
-  top: 75px;
+  top: 125px;
 }
 
 #proposals p.foreword {
   text-align: left;
   position: absolute;
   margin: 0;
-  right: 50%;
+  right: 775px;
   left: 0;
-  top: 100px;
+  top: 150px;
   margin-right: 25px;
   margin-left: 25px;
   padding: 25px 0 0;
@@ -306,38 +310,48 @@ a[href] { color: inherit; white-space: nowrap; }
 }
 
 #proposals_container {
-  outline: 1px solid;
-  margin: auto;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
   text-align: left;
   overflow: auto;
-
 }
 #proposals_container div.surface {
-  width: 2485px;
-  padding: 25px 200px;
+
+  width: 9999px;
+  height: 750px;
+  overflow: hidden;
+  padding: 0px 250px;
   box-sizing: content-box;
   text-align: right;
 }
 div.proposal {
-  background: white;
+  background: hsl(0, 0%, 97%);
+  outline: none;
   width: 700px;
   height: 700px;
-  margin: 0 -175px 0;
+  margin: 125px -175px -25px;
   display: inline-block;
   vertical-align: top;
   font: 15px/20px Consolas;
-  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
-  padding: 45px;
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+  border: 1px solid hsla(0, 0%, 0%, 0.25);
+  padding: 44px;
   text-align: left;
   transform: scale(0.5,0.5);
   z-index: 0;
-  transition: transform 99ms linear, z-index 1ms linear 99ms;
+  transition: all 222ms ease-out, z-index 1ms linear;
+  cursor: default;
 }
 
 div.proposal.activated {
+  margin: 25px -175px 0px;
+  background: white;
   transform: scale(1,1);
   z-index: 1;
-  transition: transform 99ms linear, z-index 1ms linear;
+  transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
+}
+div.proposal:hover {
+  background: white;
+  transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
 
 div.proposal pre {
