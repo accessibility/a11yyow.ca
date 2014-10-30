@@ -15,5 +15,5 @@ document.body.addEventListener "focusout", (event) ->
 proposalsContainer = document.body.querySelector("#proposals_container")
 proposalsContainer.scrollLeft = proposalsContainer.scrollWidth
 
-proposals = document.body.querySelectorAll("#proposals_container div.proposal")
+proposals = document.body.querySelectorAll("#proposals_container article.proposal")
 document.body.querySelector("#proposals_container div.surface").style.width = (proposals.length * 355) + "px"

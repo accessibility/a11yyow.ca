@@ -1,8 +1,9 @@
 a, em, sup, h1, h2, h3, h4, h5, address, pre, input, textarea, button { font: inherit; font-style: inherit; font-weight: inherit; }
-body, header, footer, div, input, textarea, button { position: relative; box-sizing: border-box; background: none; }
-body, header, footer, h1, h2, h3, h4, h5, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
+body, header, footer, article, div, input, textarea, button { position: relative; box-sizing: border-box; background: none; }
+body, header, footer, article, div, h1, h2, h3, h4, h5, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
+body { -webkit-text-size-adjust: none; text-size-adjust: none;}
 
 /* Typography */
 
@@ -21,18 +22,24 @@ body > header h2 em { font-weight: bold; }
 /* Paint */
 
 html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); }
-body { color: hsla(0, 0%, 0%, 0.75); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
+body { color: hsla(0, 0%, 0%, 0.75);  }
 h1, strong, body > header em, body > div h2 { color: black; }
 h5 { color: hsla(0, 0%, 0%, 0.33); }
-
+body > header { background: top center no-repeat url(CHAUDIEREFALLS.jpg) black; }
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
 
+/* Layout */
+
 body > header {
   padding: 75px 50px;
-  height: 1100px;
+  height: 1050px;
   max-width: 1800px;
   margin: auto;
+}
+
+@media screen and (min-height: 1100px) and (min-width: 1800px) {
+  body > header { margin-top: 1.6%; }
 }
 
 body > header h1 {
@@ -270,65 +277,48 @@ a[href] { color: inherit; white-space: nowrap; }
 
 
 #proposals {
-  /*background: linear-gradient(to bottom, hsl(65, 18%, 90%), hsl(185, 1%, 75%));*/
   border: none;
   margin: 0;
-  height: 750px;
   margin-top: -100px;
   overflow: visible;
 }
 
-#proposals > h2 {
-  position: absolute;
-  left: 0px;
-  margin-left: 25px;
-  margin-right: 25px;
-  top: 125px;
-}
-
-#proposals p.foreword {
+/*#proposals > h2 {
+  max-width: 1800px;
   text-align: left;
-  position: absolute;
-  margin: 0;
-  right: 775px;
-  left: 0;
-  top: 150px;
-  margin-right: 25px;
-  margin-left: 25px;
-  padding: 25px 0 0;
-}
-#proposals p.afterword {
+  margin: 150px auto 0;
+  padding: 0 800px 0 50px;
+}*/
+#proposals > div.foreword {
+  max-width: 1800px;
   text-align: left;
-  position: absolute;
-  margin: 0;
-  right: 50%;
-  left: 0;
-  bottom: 50px;
-  margin-right: 25px;
-  margin-left: 25px;
-  padding: 25px 0 0;
+  margin: auto;
+  padding: 150px 800px 0 50px;
+}
+#proposals > div.foreword p {
+  margin-top: 25px;
 }
 
 #proposals_container {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
-  text-align: left;
   overflow: auto;
+  margin-top: -300px;
 }
 #proposals_container div.surface {
-
   width: 9999px;
   height: 750px;
   overflow: hidden;
-  padding: 0px 250px;
+  padding: 0px 18%;
   box-sizing: content-box;
   text-align: right;
 }
-div.proposal {
+
+article.proposal {
   background: hsl(0, 0%, 97%);
   outline: none;
   width: 700px;
   height: 700px;
-  margin: 150px -175px;
+  margin: 0 -175px;
   display: inline-block;
   vertical-align: top;
   font: 15px/20px Consolas;
@@ -336,25 +326,24 @@ div.proposal {
   border: 1px solid hsla(0, 0%, 0%, 0.25);
   padding: 44px;
   text-align: left;
-  transform: scale(0.5,0.5);
+  transform: scale(0.5,0.5) translate(0px, 300px);
   z-index: 0;
   transition: all 222ms ease-out, z-index 1ms linear;
   cursor: default;
 }
 
-div.proposal.activated {
-  margin: 0 -175px;
+article.proposal.activated {
   background: white;
-  transform: scale(1,1);
+  transform: scale(1,1) translate(0px, 0px);
   z-index: 1;
   transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
-div.proposal:hover {
+article.proposal:hover {
   background: white;
   transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
 
-div.proposal pre {
+article.proposal pre {
   display: block;
   text-align: left;
   white-space: pre-wrap;
@@ -362,8 +351,8 @@ div.proposal pre {
   position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
 
-div.new.proposal input,
-div.proposal textarea {
+article.new.proposal input,
+article.proposal textarea {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -371,12 +360,12 @@ div.proposal textarea {
   border: 0;
 }
 
-div.proposal input:not(:focus),
-div.proposal textarea:not(:focus) {
+article.proposal input:not(:focus),
+article.proposal textarea:not(:focus) {
   outline: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
-div.proposal label {
+article.proposal label {
   padding: 5px;
 }
 
@@ -397,7 +386,7 @@ div.proposal label {
   min-height: 100px;
 }
 
-div.proposal h2 {
+article.proposal h2 {
   position: absolute;
   left: 0px; top: -50px;
 }
