@@ -18,15 +18,15 @@ body > header h2, #sponsors > h2, #schedule table td:first-child { font: 21px/30
 body > header h2 em { font-weight: bold; }
 #summary, div.foreword em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
-article.new.proposal h2 { font-size: 21px; line-height: 25px; font-weight: normal; letter-spacing: 0; text-rendering: geometricPrecision;}
+article.proposal h2 { font-size: 25px; line-height: 30px; font-weight: normal; letter-spacing: 0; text-rendering: geometricPrecision;}
 #sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
 
 /* Paint */
 
 html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); }
 body { color: hsla(0, 0%, 0%, 0.75);  }
-h1, strong, body > header em, body > div h2 { color: black; }
-h5, article.new.proposal h2 { color: hsla(0, 0%, 0%, 0.33); }
+h1, strong, body > header em, body > div[id] > h2 { color: black; }
+h5 { color: hsla(0, 0%, 0%, 0.33); }
 body > header { background: top center no-repeat url(CHAUDIEREFALLS.jpg) black; }
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
@@ -262,25 +262,15 @@ body > header #about_the_background_image a {
 
 
 
-#proposals {
-  border: none;
-  margin: 0;
-  margin-top: -100px;
-  overflow: visible;
-}
+#proposals { overflow: visible; }
 
-/*#proposals > h2 {
-  max-width: 1800px;
-  text-align: left;
-  margin: 150px auto 0;
-  padding: 0 800px 0 50px;
-}*/
 #proposals > div.foreword {
   max-width: 1250px;
   text-align: left;
   margin: auto;
-  padding: 150px 25px 25px 25px;
+  padding: 50px 25px 0;
   z-index: 1;
+  transform: scale(1, 1);
 }
 #proposals > div.foreword p {
   margin: 5px 0 15px;
@@ -290,13 +280,13 @@ body > header #about_the_background_image a {
 #proposals_container {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
   overflow: auto;
-  margin-top: -325px;
+  margin-top: -350px;
 }
 #proposals_container div.surface {
   width: 9999px;
-  height: 800px;
+  height: 900px;
   overflow: hidden;
-  padding: 0px 20% 25px;
+  padding: 25px 20% 25px;
   box-sizing: content-box;
   text-align: right;
 }
@@ -309,23 +299,23 @@ article.proposal {
   margin: 0 -175px;
   display: inline-block;
   vertical-align: top;
-  font: 15px/20px Consolas;
+  font: bold 15px/20px Consolas, Courier, monospace;
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
   border: 1px solid hsla(0, 0%, 0%, 0.25);
   padding: 124px 44px 44px;
   text-align: left;
   transform: scale(0.5,0.5) translate(0px, 300px);
   -webkit-transform: scale(0.5,0.5) translate(0px, 300px);
-  z-index: 0;
+  z-index: 1;
   transition: all 222ms ease-out, z-index 1ms linear;
   cursor: default;
 }
 
 article.proposal.activated {
   background: white;
-  transform: scale(1,1) translate(0px, 0px);
-  -webkit-transform: scale(1,1) translate(0px, 0px);
-  z-index: 1;
+  transform: scale(1,1) translate(0px, 50px);
+  -webkit-transform: scale(1,1) translate(0px, 50px);
+  z-index: 2;
   transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
 article.proposal:hover {
@@ -335,11 +325,23 @@ article.proposal:hover {
 
 article.proposal h2 {
   position: absolute;
-  top: 25px;
+  bottom: 100%;
+  left: 0;
+  height: 0px;
+  text-shadow: 0px 1px 2px hsla(0, 0%, 0%, 0.3);
+  color: white;
+  transition: all 222ms linear;
+  overflow: hidden;
 }
+article.proposal.activated h2 {
+  height: 30px;
+  transition: all 222ms ease-out 222ms;
+}
+
 article.proposal h4 {
   position: absolute;
   top: 50px;
+  left: 45px; right: 45px;
   height: 60px;
 }
 
@@ -352,13 +354,14 @@ article.proposal pre {
   color: black;
 }
 
-article.new.proposal input,
+article.proposal input,
 article.proposal textarea {
   display: block;
   box-sizing: border-box;
   width: 100%;
   padding: 5px;
   border: 0;
+  color: black;
 }
 
 article.proposal input:not(:focus),
