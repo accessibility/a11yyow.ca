@@ -14,7 +14,7 @@ h2 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", ser
 h3 { font-size: 0; position: absolute; }
 h4 { font: bold 32px/30px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; text-align: left; }
 h5 { display: inline; }
-body > header h2, #sponsors > h2, #program table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
+body > header h2, #sponsors > h2, #schedule table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
 #summary, div.foreword em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
@@ -219,40 +219,50 @@ body > header #about_the_background_image a {
 #NNNN_AT_CARLETON { background: black; color: hsl(0, 0%, 50%); padding: 50px; }
 #NNNN_AT_CARLETON img { height: 120px; margin-bottom: 5px; }
 
-#program {
+#schedule {
   margin: auto;
   max-width: 1250px;
   border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
   padding: 49px 0 25px;
 }
 
-#program h2 {
+#schedule h2 {
 }
-#program .date {
+#schedule .date {
+  position: absolute;
+  top: 50px;
+  left: 0;
   text-align: left;
 }
-
-#program table {
-  max-width: 1200px;
-  margin: 25px auto 0;
+#schedule .updated {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  text-align: left;
+  font-style:italic;
 }
 
-#program table td {
+#schedule table {
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+#schedule table td {
   width: 50%;
   vertical-align: top;
   padding: 0px 5px 25px;
 }
 
-#program table td:first-child {
+#schedule table td:first-child {
   text-align: right;
 
 }
-#program table td:last-child {
+#schedule table td:last-child {
   text-align: left;
 }
 
-#program table td:first-child,
-#program .date {
+#schedule table td:first-child,
+#schedule .date {
   letter-spacing: 6px;
   text-transform: uppercase;
   font-weight: bold;
