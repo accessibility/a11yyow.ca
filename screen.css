@@ -328,7 +328,7 @@ div.proposal {
   outline: none;
   width: 700px;
   height: 700px;
-  margin: 125px -175px -25px;
+  margin: 150px -175px;
   display: inline-block;
   vertical-align: top;
   font: 15px/20px Consolas;
@@ -343,7 +343,7 @@ div.proposal {
 }
 
 div.proposal.activated {
-  margin: 25px -175px 0px;
+  margin: 0 -175px;
   background: white;
   transform: scale(1,1);
   z-index: 1;
