@@ -3,8 +3,17 @@
   var proposalsContainer;
 
   document.body.addEventListener("focusin", function(event) {
-    var element;
-    element = /_input/.test(event.target.id) ? event.target.parentNode.parentNode : event.target;
+    var element, filtered, parents;
+    element = /_input/.test(event.target.id) ? (element = event.target, parents = ((function() {
+      var _ref, _results;
+      _results = [];
+      while ((_ref = element.parentNode) != null ? _ref.classList : void 0) {
+        _results.push(element = element.parentNode);
+      }
+      return _results;
+    })()), filtered = parents.filter(function(element) {
+      return element.classList.contains("proposal");
+    }), filtered[0]) : event.target;
     return element.classList.add("focused");
   });
 

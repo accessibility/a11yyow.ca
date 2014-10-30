@@ -1,6 +1,6 @@
-a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
+a, em, sup, h1, h2, h3, h4, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
-body, header, footer, h1, h2, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
+body, header, footer, h1, h2, h3, h4, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
 
@@ -9,6 +9,7 @@ sup { font-size: 50%; line-height: 0; }
 body { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; }
 h1 { font: 55px/60px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
 h2 { font: 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: center; }
+h4 { font: 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: left; }
 h3 { font-size: 0; position: absolute; }
 body > header h2, #sponsors > h2, #program table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
@@ -54,7 +55,7 @@ body > header #about_the_background_image {
   text-shadow: 0px 1px 2px black;
   font-size: 15px;
   line-height: 20px;
-  transition: all 150ms linear;
+  transition: all 222ms ease-out;
   opacity: 0.5;
 }
 body > header #about_the_background_image:hover {
@@ -369,12 +370,27 @@ div.proposal pre {
 }
 
 
+div.new.proposal #title_input {
+  display: block;
+  margin: 0px;
+  font: inherit;
+  width: 100%;
+  border: 1px solid hsla(0, 0%, 0%, 0.33);
+  box-sizing: border-box;
+  padding: 5px;
+  margin: -5px;
+}
+
 textarea {
   display: block;
   margin: 0px;
   font: inherit;
   width: 100%;
   min-height: 100px;
+  border: 1px solid hsla(0, 0%, 0%, 0.33);
+  box-sizing: border-box;
+  padding: 5px;
+  margin: -5px;
 }
 
 #audience_input {
