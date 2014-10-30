@@ -140,10 +140,12 @@ body > header #about_the_background_image a {
   color: hsla(0, 0%, 100%, 0.95);
 }
 
+
+
+
 #whereabouts { max-width: 1250px; padding: 25px; margin: 25px auto; }
 #whereabouts > p { margin: 25px auto; max-width: 1000px; }
 #whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 1px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); box-sizing: border-box;}
-
 #whereabouts div.destination {
   padding-top: 238px;
   position: absolute;
@@ -154,7 +156,6 @@ body > header #about_the_background_image a {
   height: 500px;
   text-align: left;
 }
-
 #whereabouts div.destination img.photo {
   position: absolute;
   top: 10px;
@@ -164,7 +165,6 @@ body > header #about_the_background_image a {
   border: 1px solid hsla(0, 0%, 0%, 0.5);
   box-sizing: border-box;
 }
-
 #whereabouts div.destination > .line {
   display: block;
   border-top: 2px solid hsl(350, 100%, 60%);
@@ -174,20 +174,12 @@ body > header #about_the_background_image a {
   position: absolute;
   box-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.5);
 }
-
 #whereabouts div.destination div.outbound { margin-top: 12px; }
 
 #contact { padding: 25px; margin: 25px auto; max-width: 1250px; }
-#contact p {
-  max-width: 1025px;
-  text-align: center;
-  margin: 25px auto;
-}
+#contact p { max-width: 800px; text-align: center; margin: 25px auto; }
 
-#sponsors {
-  padding: 100px 0px 0;
-  font: 19px/25px "AvenirNext-Regular", sans-serif;
-}
+#sponsors { padding: 100px 0px 0; font: 19px/25px "AvenirNext-Regular", sans-serif; }
 
 #sponsors h2 {
   padding: 0 0px 24px;
