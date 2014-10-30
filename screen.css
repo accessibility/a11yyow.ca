@@ -36,7 +36,7 @@ body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px 
 
 body > header { padding: 75px 50px; height: 1125px; margin:auto; }
 
-@media screen and (min-height: 1125px) and (min-width: 1800px) {
+@media screen and (min-height: 1100px) and (min-width: 1800px) {
   body { margin: 15px auto; }
 }
 
@@ -428,9 +428,15 @@ div.commit button {
   margin: -5px -1px -5px -3px;
   box-sizing: content-box;
   border: 2px solid hsla(0, 0%, 0%, 0.75);
-  border-radius: 4px;
+  border-radius: 2px;
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.75);
+}
+
+div.commit button:active,
+div.commit button.activated {
+  background: black;
+  color: white;
 }
 
 
