@@ -1,6 +1,6 @@
 a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weight: inherit; }
 body, header, footer, div { box-sizing: border-box; position: relative; }
-body, header, footer, h1, h2, p, sup, ul, li { margin: 0; padding: 0; }
+body, header, footer, h1, h2, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
 
@@ -323,4 +323,45 @@ a[href] { color: inherit; white-space: nowrap; }
   margin-right: 25px;
   margin-left: 25px;
   padding: 25px 0 0;
+}
+
+#proposals_container {
+  outline: 1px solid;
+  margin: auto;
+  text-align: left;
+  overflow: scroll;
+}
+#proposals_container div.surface {
+  width: 3200px;
+  padding: 150px 200px;
+  height: 475px;
+  box-sizing: content-box;
+}
+div.proposal {
+  background: white;
+  width: 400px;
+  height: 475px;
+  margin: 0 5px;
+  padding: 0;
+  display: inline-block;
+  outline: none;
+  vertical-align: top;
+  font: 9px/12px Consolas;
+  transform: scale(1,1);
+  transition: transform 99ms linear;
+  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+div.proposal:focus {
+  transform: scale(1.5,1.5);
+  z-index: 1;
+}
+
+div.proposal pre {
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  padding: 25px;
+  margin: 0;
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
