@@ -5,8 +5,10 @@ p span, span.line { white-space: nowrap; }
 
 /* Typography */
 
-body { font: 21px/25px "Cochin", "Constantia", serif; }
-h1 { font: 55px/60px "Cochin", "Helvetica", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
+body { font: 21px/25px "Baskerville", "Cochin", "Constantia", serif; }
+h1 { font: 55px/60px "Baskerville", "Cochin", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
+h2 { font: 32px/25px "Baskerville", "Cochin", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: center; }
+
 h3 { font-size: 0; position: absolute; }
 sup { font-size: 50%; line-height: 0; }
 #summary, p.foreword, p.afterword { font-style:italic; }
@@ -14,7 +16,16 @@ body > header em { font-weight: bold; }
 
 #summary { font-size: 25px; line-height: 30px;}
 
-#sponsors { font: 21px/25px "Avenir", "Calibri", sans-serif; }
+#sponsors { font: 21px/25px "AvenirNext", "Calibri", sans-serif; }
+
+#sponsors h2, body > header h2 {
+  font: 21px/25px "Baskerville", "Cochin", "Constantia", serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
+  text-rendering: geometricPrecision;
+}
+
 
 
 
@@ -46,11 +57,7 @@ body > header h1 {
 
 #sponsors h2,
 body > header h2 {
-  font: 21px/25px "Cochin", "Helvetica", "Constantia", serif;
-  text-transform: uppercase;
-  letter-spacing: 6px;
   margin-bottom: 5px;
-  text-rendering: geometricPrecision;
 }
 
 body > header #summary {
@@ -78,12 +85,6 @@ body > header #about_the_background_image a {
 
 a[href] { color: inherit; white-space: nowrap; }
 
-h2 {
-  font: 32px/25px "Cochin", "Helvetica", "Constantia", serif;
-  font-weight: bold;
-  text-rendering: geometricPrecision;
-  text-align: center;
-}
 
 #registration {
   margin: auto;
