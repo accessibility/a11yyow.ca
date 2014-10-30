@@ -7,3 +7,6 @@ document.body.addEventListener "focusin", (event) ->
 
 document.body.addEventListener "focusout", (event) ->
   element.classList.remove("focused") for element in document.getElementsByClassName("focused")
+
+proposalsContainer = document.body.querySelector("#proposals_container")
+proposalsContainer.scrollLeft = proposalsContainer.scrollWidth

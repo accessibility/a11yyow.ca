@@ -332,15 +332,16 @@ a[href] { color: inherit; white-space: nowrap; }
   overflow: scroll;
 }
 #proposals_container div.surface {
-  width: 3200px;
-  padding: 50px 250px;
+  width: 1800px;
+  padding: 25px 225px;
   box-sizing: content-box;
+  text-align: right;
 }
 div.proposal {
   background: white;
   width: 700px;
   height: 900px;
-  margin: 0 -170px;
+  margin: 0 -175px;
   padding: 0;
   display: inline-block;
   outline: none;
