@@ -1,10 +1,5 @@
 Function.delay = (amount, f) -> setTimeout(f, amount)
 
-proposalsContainer = document.body.querySelector("#proposals_container")
-proposalsContainer.scrollLeft = proposalsContainer.scrollWidth
-proposals = document.body.querySelectorAll("#proposals_container article.proposal")
-document.body.querySelector("#proposals_container div.surface").style.width = (proposals.length * 355) + "px"
-
 document.body.addEventListener "focusin", (event) ->
   element.classList.remove("activated") for element in document.getElementsByClassName("activated") when element?.classList
   element = if /_input|mail_to_output/.test event.target.id
@@ -25,9 +20,12 @@ document.body.addEventListener "keydown", (event) ->
 
 document.body.addEventListener "click", (event) ->
   if /commit_input/.test event.target.id
-    event.target.classList.add("activated")
-    event.target.parentNode.querySelector("#mail_to_output").click()
-    Function.delay 999, -> event.target.classList.remove("activated")
+    if event.target.classList.contains("activated")
+      event.preventDefault()
+    else
+      event.target.classList.add("activated")
+      event.target.parentNode.querySelector("#mail_to_output").click()
+      Function.delay 999, -> event.target.classList.remove("activated")
   if /mail_to_output/.test event.target.id
     renderMailToOutput()
 
@@ -35,19 +33,27 @@ renderMailToOutput = (event) ->
   document.body.querySelector("#mail_to_output").href = proposalMailToURL()
 
 proposalMailToURL = ->
+  titleInput = document.body.querySelector "#title_input"
+  abstractInput = document.body.querySelector "#abstract_input"
+  audienceInput = document.body.querySelector "#audience_input"
+  biographyInput = document.body.querySelector "#biography_input"
   address = encodeURIComponent "input@ottawa.accessibility.unconference.ca"
-  subject = encodeURIComponent "Proposal for the Ottawa Accessibility Unconference"
-  body    = encodeURIComponent """
-    Title:
-    #{document.body.querySelector("#title_input").value}
-
+  subject = encodeURIComponent titleInput.value or titleInput.placeholder
+  body = encodeURIComponent """
     Abstract:
-    #{document.body.querySelector("#abstract_input").value}
+    #{abstractInput.value or abstractInput.placeholder}
 
     Audience:
-    #{document.body.querySelector("#audience_input").value}
+    #{audienceInput.value or audienceInput.placeholder}
 
     Biography:
-    #{document.body.querySelector("#biography_input").value}
+    #{biographyInput.value or biographyInput.placeholder}
   """
-  "mailto:#{address}?Subject=#{subject}&Body=#{body}"
+  return "mailto:#{address}?Subject=#{subject}&Body=#{body}"
+
+proposalsContainer = document.body.querySelector "#proposals_container"
+proposalsContainer.scrollLeft = proposalsContainer.scrollWidth
+proposalSurface = document.body.querySelector "#proposals div.surface"
+proposals = document.body.querySelectorAll "#proposals article.proposal"
+proposalSurface.style.width = (proposals.length * 355) + "px"
+document.body.classList.add("ready")
