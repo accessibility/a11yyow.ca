@@ -192,9 +192,9 @@ h2 {
 
 #whereabouts div.destination img.photo {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
-  height: 220px;
+  height: 210px;
   width: 100%;
   border: 1px solid hsla(0, 0%, 0%, 0.5);
   box-sizing: border-box;
