@@ -14,7 +14,8 @@ h2 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", ser
 h3 { font-size: 0; position: absolute; }
 h4 { font: bold 32px/30px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; text-align: left; }
 h5 { display: inline; }
-body > header h2, #sponsors > h2, #schedule table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
+body > header h2, #sponsors > h2 { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
+td:first-child, #schedule .date { font: 17px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
 #summary, div.foreword em, #contact p em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
@@ -65,12 +66,10 @@ body > header #about_the_background_image a {
 
 
 #registration {
-  margin: auto;
-  max-width: 1800px;
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 49px 0 50px;
+  max-width: 1250px;
+  padding: 25px; margin: 25px auto;
   box-sizing: content-box;
-  height: 150px;
+  height: 200px;
 }
 
 #registration p {
@@ -141,7 +140,7 @@ body > header #about_the_background_image a {
   color: hsla(0, 0%, 100%, 0.95);
 }
 
-#whereabouts { max-width: 1250px; padding: 50px 0; margin: auto; }
+#whereabouts { max-width: 1250px; padding: 25px; margin: 25px auto; }
 #whereabouts > p { margin: 25px auto; max-width: 1000px; }
 #whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 1px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); box-sizing: border-box;}
 
@@ -178,12 +177,7 @@ body > header #about_the_background_image a {
 
 #whereabouts div.destination div.outbound { margin-top: 12px; }
 
-#contact {
-  margin: auto;
-  max-width: 1800px;
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 49px 0 50px;
-}
+#contact { padding: 25px; margin: 25px auto; max-width: 1250px; }
 #contact p {
   max-width: 1025px;
   text-align: center;
@@ -211,53 +205,67 @@ body > header #about_the_background_image a {
 #schedule {
   margin: auto;
   max-width: 1250px;
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 49px 0 25px;
+  padding: 25px;
 }
 
 #schedule h2 {
+  margin-left: 50%;
+  text-align: left;
+  border-bottom: 5px solid hsla(0, 0%, 0%, 1);
+  padding-bottom: 20px;
 }
 #schedule .date {
   position: absolute;
-  top: 50px;
-  left: 0;
-  text-align: left;
+  top: 30px;
+  left: 25px;
+  right: 50%;
+  text-align: right;
+  padding-right: 25px;
 }
 #schedule .updated {
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 30px;
+  right: 25px;
   text-align: left;
   font-style:italic;
+  color: hsla(0, 0%, 0%, 0.33);
 }
 
 #schedule table {
-  max-width: 1200px;
-  margin: 50px auto 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
 }
 
 #schedule table td {
-  width: 50%;
+  border-collapse: collapse;
   vertical-align: top;
-  padding: 0px 5px 25px;
+  padding: 0 0 25px;
 }
 
 #schedule table td:first-child {
   text-align: right;
-
+  padding-right: 25px;
+  padding-top: 25px;
+  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
+  width: 50%;
 }
 #schedule table td:last-child {
   text-align: left;
+  width: 50%;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.33);
+  padding-top: 24px;
 }
 
 #schedule table td:first-child,
 #schedule .date {
-  letter-spacing: 6px;
+  /*letter-spacing: 6px;*/
   text-transform: uppercase;
   font-weight: bold;
   color: hsla(195, 100%, 15%, 0.75);
-  font-size:19px;
-  padding-top: 1px;
+  /*font-size:19px;*/
+  /*padding-top: 1px;*/
 }
 
 
