@@ -3,11 +3,18 @@
   var proposalsContainer;
 
   document.body.addEventListener("focusin", function(event) {
-    var element, filtered, parents;
+    var element, filtered, parents, _i, _len, _ref;
+    _ref = document.getElementsByClassName("activated");
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      element = _ref[_i];
+      if (element != null ? element.classList : void 0) {
+        element.classList.remove("activated");
+      }
+    }
     element = /_input/.test(event.target.id) ? (element = event.target, parents = ((function() {
-      var _ref, _results;
+      var _ref1, _results;
       _results = [];
-      while ((_ref = element.parentNode) != null ? _ref.classList : void 0) {
+      while ((_ref1 = element.parentNode) != null ? _ref1.classList : void 0) {
         _results.push(element = element.parentNode);
       }
       return _results;
@@ -23,7 +30,9 @@
     _results = [];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       element = _ref[_i];
-      _results.push(element.classList.remove("activated"));
+      if (element != null ? element.classList : void 0) {
+        _results.push(element.classList.remove("activated"));
+      }
     }
     return _results;
   });

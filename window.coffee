@@ -1,4 +1,5 @@
 document.body.addEventListener "focusin", (event) ->
+  element.classList.remove("activated") for element in document.getElementsByClassName("activated") when element?.classList
   element = if /_input/.test event.target.id
     element = event.target
     parents = (element = element.parentNode while element.parentNode?.classList)
@@ -9,7 +10,7 @@ document.body.addEventListener "focusin", (event) ->
   element.classList.add("activated")
 
 document.body.addEventListener "focusout", (event) ->
-  element.classList.remove("activated") for element in document.getElementsByClassName("activated")
+  element.classList.remove("activated") for element in document.getElementsByClassName("activated") when element?.classList
 
 proposalsContainer = document.body.querySelector("#proposals_container")
 proposalsContainer.scrollLeft = proposalsContainer.scrollWidth

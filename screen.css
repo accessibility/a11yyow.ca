@@ -1,36 +1,32 @@
-a, em, sup, h1, h2, h3, h4, address { font: inherit; font-style: inherit; font-weight: inherit; }
-body, header, footer, div { box-sizing: border-box; position: relative; }
-body, header, footer, h1, h2, h3, h4, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
+a, em, sup, h1, h2, h3, h4, h5, address, pre, input, textarea, button { font: inherit; font-style: inherit; font-weight: inherit; }
+body, header, footer, div, input, textarea, button { position: relative; box-sizing: border-box; }
+body, header, footer, h1, h2, h3, h4, h5, p, sup, ul, li, pre { margin: 0; padding: 0; border: 0; }
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
 
 /* Typography */
 
-body { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; }
-h1 { font: 55px/60px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
-h2 { font: 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: center; }
-h4 { font: 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: left; }
+body { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-align: center; }
+h1 { font: bold 55px/60px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; letter-spacing: -1px; }
+h2 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; }
 h3 { font-size: 0; position: absolute; }
+h4 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; text-align: left; }
+h5 { display: inline; }
 body > header h2, #sponsors > h2, #program table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
 #summary, p.foreword, p.afterword { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
 #sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
 
-
-
 /* Paint */
 
 html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); }
 body { color: hsla(0, 0%, 0%, 0.75); background: top center no-repeat url(CHAUDIEREFALLS.jpg); }
 h1, strong, body > header em, body > div h2 { color: black; }
+h5 { color: hsla(0, 0%, 0%, 0.33); }
 
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
-
-body {
-  text-align: center;
-}
 
 body > header {
   padding: 75px 50px;
@@ -274,33 +270,16 @@ a[href] { color: inherit; white-space: nowrap; }
 
 
 #proposals {
-  padding: 50px;
   border: none;
-  max-width: 1250px;
-  margin: auto;
+  margin: 0;
 }
 
-#proposals h2 {
+#proposals > h2 {
   position: absolute;
   left: 0px;
   margin-left: 25px;
   margin-right: 25px;
   top: 75px;
-}
-
-#proposals ul, #proposals p {
-  margin-left: 50%;
-  text-align: left;
-}
-#proposals li {
-  display: block;
-  padding: 25px 0px 0px;
-  text-align: left;
-  margin: 0px 25px;
-}
-
-#proposals p {
-  padding: 0px 25px;
 }
 
 #proposals p.foreword {
@@ -330,29 +309,29 @@ a[href] { color: inherit; white-space: nowrap; }
   outline: 1px solid;
   margin: auto;
   text-align: left;
-  overflow: scroll;
+  overflow: auto;
+
 }
 #proposals_container div.surface {
-  width: 1800px;
-  padding: 25px 225px;
+  width: 2485px;
+  padding: 25px 200px;
   box-sizing: content-box;
   text-align: right;
 }
 div.proposal {
   background: white;
   width: 700px;
-  height: 900px;
-  margin: 0 -175px;
-  padding: 0;
+  height: 700px;
+  margin: 0 -175px 0;
   display: inline-block;
-  outline: none;
   vertical-align: top;
   font: 15px/20px Consolas;
-
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+  padding: 45px;
+  text-align: left;
   transform: scale(0.5,0.5);
   z-index: 0;
   transition: transform 99ms linear, z-index 1ms linear 99ms;
-  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.5);
 }
 
 div.proposal.activated {
@@ -369,36 +348,42 @@ div.proposal pre {
   position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
 
-
-div.new.proposal #title_input {
+div.new.proposal input,
+div.proposal textarea {
   display: block;
-  margin: 0px;
-  font: inherit;
-  width: 100%;
-  border: 1px solid hsla(0, 0%, 0%, 0.33);
   box-sizing: border-box;
+  width: 100%;
   padding: 5px;
-  margin: -5px;
+  border: 0;
 }
 
-textarea {
-  display: block;
-  margin: 0px;
-  font: inherit;
-  width: 100%;
-  min-height: 100px;
-  border: 1px solid hsla(0, 0%, 0%, 0.33);
-  box-sizing: border-box;
-  padding: 5px;
-  margin: -5px;
+div.proposal input:not(:focus),
+div.proposal textarea:not(:focus) {
+  outline: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
+div.proposal label {
+  padding: 5px;
+}
+
+#title_input {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
 #audience_input {
   min-height: 50px;
+  margin-bottom: 15px;
 }
 #abstract_input {
-  min-height: 300px;
+  min-height: 275px;
+  margin-bottom: 15px;
 }
 #biography_input {
   min-height: 100px;
+}
+
+div.proposal h2 {
+  position: absolute;
+  left: 0px; top: -50px;
 }
