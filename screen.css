@@ -227,9 +227,9 @@ body > header #about_the_background_image a {
 }
 
 #program h2 {
-  position: absolute;
-  left: 0px;
-  top: 75px;
+}
+#program .date {
+  text-align: left;
 }
 
 #program table {
@@ -261,10 +261,6 @@ body > header #about_the_background_image a {
   padding-top: 1px;
 }
 
-#program .date {
-  text-align: left;
-  position: absolute; left: 0px; top: 150px;
-}
 
 
 #proposals {
@@ -281,28 +277,27 @@ body > header #about_the_background_image a {
   padding: 0 800px 0 50px;
 }*/
 #proposals > div.foreword {
-  max-width: 1800px;
+  max-width: 1250px;
   text-align: left;
   margin: auto;
-  padding: 150px 50px 0 50px;
+  padding: 150px 25px 25px 25px;
   z-index: 1;
 }
 #proposals > div.foreword p {
-  margin-top: 25px;
-  width: 36%;
-  max-width: 575px;
+  margin: 5px 0 15px;
+  width: 45%;
 }
 
 #proposals_container {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
   overflow: auto;
-  margin-top: -300px;
+  margin-top: -325px;
 }
 #proposals_container div.surface {
   width: 9999px;
   height: 750px;
   overflow: hidden;
-  padding: 0px 18%;
+  padding: 0px 20%;
   box-sizing: content-box;
   text-align: right;
 }
