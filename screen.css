@@ -141,22 +141,9 @@ body > header #about_the_background_image a {
   color: hsla(0, 0%, 100%, 0.95);
 }
 
-#whereabouts {
-  max-width: 1250px;
-  border-top: 1px dotted hsla(0, 0%, 0%, 0.33);
-  padding: 49px 0 50px;
-  margin: auto;
-}
-
-#whereabouts p { margin: 25px auto; max-width: 1000px; }
-#whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 1px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); opacity: 0.8;}
-#whereabouts img.map { opacity: 1;
-  box-sizing: border-box;
-}
-
-#whereabouts div.destination div.outbound {
-  margin-top: 12px;
-}
+#whereabouts { max-width: 1250px; padding: 50px 0; margin: auto; }
+#whereabouts > p { margin: 25px auto; max-width: 1000px; }
+#whereabouts img.map { width: 500px; height: 500px; border-radius: 300px; display:block; margin:auto; border: 1px solid hsla(0, 0%, 0%, 0.5); background: hsla(0, 0%, 100%, 1); box-sizing: border-box;}
 
 #whereabouts div.destination {
   padding-top: 238px;
@@ -188,6 +175,8 @@ body > header #about_the_background_image a {
   position: absolute;
   box-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.5);
 }
+
+#whereabouts div.destination div.outbound { margin-top: 12px; }
 
 #contact {
   margin: auto;
@@ -305,9 +294,9 @@ body > header #about_the_background_image a {
 }
 #proposals_container div.surface {
   width: 9999px;
-  height: 750px;
+  height: 800px;
   overflow: hidden;
-  padding: 0px 20%;
+  padding: 0px 20% 25px;
   box-sizing: content-box;
   text-align: right;
 }
@@ -316,7 +305,7 @@ article.proposal {
   background: hsl(0, 0%, 97%);
   outline: none;
   width: 700px;
-  height: 700px;
+  height: 800px;
   margin: 0 -175px;
   display: inline-block;
   vertical-align: top;
