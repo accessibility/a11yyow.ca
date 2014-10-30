@@ -4,6 +4,7 @@ body, header, footer, article, div, h1, h2, h3, h4, h5, p, sup, ul, li, pre { ma
 p span, span.line { white-space: nowrap; }
 sup { font-size: 50%; line-height: 0; }
 body { -webkit-text-size-adjust: none; text-size-adjust: none;}
+a[href] { color: inherit; white-space: nowrap; }
 
 /* Typography */
 
@@ -11,12 +12,13 @@ body { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif;
 h1 { font: bold 55px/60px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; letter-spacing: -1px; }
 h2 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; }
 h3 { font-size: 0; position: absolute; }
-h4 { font: bold 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; text-align: left; }
+h4 { font: bold 32px/30px "Cochin", "Baskerville", "Constantia", "Palatino", serif; text-rendering: geometricPrecision; text-align: left; }
 h5 { display: inline; }
 body > header h2, #sponsors > h2, #program table td:first-child { font: 21px/30px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
 body > header h2 em { font-weight: bold; }
-#summary, p.foreword, p.afterword { font-style:italic; }
+#summary, div.foreword em, p.afterword, article.proposal h2 { font-style:italic; }
 #summary { font-size: 25px; line-height: 30px; }
+article.new.proposal h2 { font-size: 21px; line-height: 25px; font-weight: normal; letter-spacing: 0; text-rendering: geometricPrecision;}
 #sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
 
 /* Paint */
@@ -24,27 +26,17 @@ body > header h2 em { font-weight: bold; }
 html { background: no-repeat linear-gradient(to bottom, hsl(65, 15%, 90%), hsl(0, 0%, 75%)); }
 body { color: hsla(0, 0%, 0%, 0.75);  }
 h1, strong, body > header em, body > div h2 { color: black; }
-h5 { color: hsla(0, 0%, 0%, 0.33); }
+h5, article.new.proposal h2 { color: hsla(0, 0%, 0%, 0.33); }
 body > header { background: top center no-repeat url(CHAUDIEREFALLS.jpg) black; }
 body > header, #whereabouts, #registration, #contact { text-shadow: 0px 1px 0px hsla(0, 0%, 100%, 0.5);  }
 #summary { color: hsla(0, 0%, 0%, 0.75); }
 
 /* Layout */
 
-body > header {
-  padding: 75px 50px;
-  height: 1050px;
-  max-width: 1800px;
-  margin: auto;
-}
+body > header { padding: 75px 50px; height: 1050px; max-width: 1800px; margin: auto; }
 
 @media screen and (min-height: 1100px) and (min-width: 1800px) {
   body > header { margin-top: 1.6%; }
-}
-
-body > header h1 {
-  color: black;
-  margin-bottom: 5px;
 }
 
 body > header #summary {
@@ -70,7 +62,6 @@ body > header #about_the_background_image a {
 
 
 
-a[href] { color: inherit; white-space: nowrap; }
 
 
 #registration {
@@ -294,6 +285,7 @@ a[href] { color: inherit; white-space: nowrap; }
   text-align: left;
   margin: auto;
   padding: 150px 800px 0 50px;
+  z-index: 1;
 }
 #proposals > div.foreword p {
   margin-top: 25px;
@@ -324,7 +316,7 @@ article.proposal {
   font: 15px/20px Consolas;
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
   border: 1px solid hsla(0, 0%, 0%, 0.25);
-  padding: 44px;
+  padding: 124px 44px 44px;
   text-align: left;
   transform: scale(0.5,0.5) translate(0px, 300px);
   z-index: 0;
@@ -343,12 +335,23 @@ article.proposal:hover {
   transition: all 222ms ease-out, z-index 1ms linear, background 1ms linear;
 }
 
+article.proposal h2 {
+  position: absolute;
+  top: 25px;
+}
+article.proposal h4 {
+  position: absolute;
+  top: 50px;
+  height: 60px;
+}
+
 article.proposal pre {
   display: block;
   text-align: left;
   white-space: pre-wrap;
-  padding: 50px;
+  padding: 100px 50px 50px;
   position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  color: black;
 }
 
 article.new.proposal input,
@@ -372,21 +375,16 @@ article.proposal label {
 #title_input {
   height: 40px;
   line-height: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 #audience_input {
   min-height: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 #abstract_input {
   min-height: 275px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 #biography_input {
   min-height: 100px;
-}
-
-article.proposal h2 {
-  position: absolute;
-  left: 0px; top: -50px;
 }
