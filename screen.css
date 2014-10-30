@@ -2,19 +2,21 @@ a, em, sup, h1, h2, h3, address { font: inherit; font-style: inherit; font-weigh
 body, header, footer, div { box-sizing: border-box; position: relative; }
 body, header, footer, h1, h2, p, sup, ul, li { margin: 0; padding: 0; }
 p span, span.line { white-space: nowrap; }
+sup { font-size: 50%; line-height: 0; }
 
 /* Typography */
 
-body { font: 21px/25px "Baskerville", "Cochin", "Palatino", "Constantia", serif; }
-h1 { font: 55px/60px "Baskerville", "Cochin", "Palatino", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
-h2 { font: 32px/25px "Baskerville", "Cochin", "Palatino", "Constantia", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: center; }
+body { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; }
+h1 { font: 55px/60px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; letter-spacing: -1px; }
+h2 { font: 32px/25px "Cochin", "Baskerville", "Constantia", "Palatino", serif; font-weight: bold; text-rendering: geometricPrecision; text-align: center; }
 h3 { font-size: 0; position: absolute; }
-sup { font-size: 50%; line-height: 0; }
+body > header h2, #sponsors > h2, #program table td:first-child { font: 21px/25px "Cochin", "Baskerville", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 6px; text-rendering: geometricPrecision; }
+body > header h2 em { font-weight: bold; }
 #summary, p.foreword, p.afterword { font-style:italic; }
-body > header em { font-weight: bold; }
-body > header h2, #sponsors > h2 { font: 21px/25px "Baskerville", "Cochin", "Palatino", "Constantia", serif; text-transform: uppercase; letter-spacing: 5px; text-rendering: geometricPrecision; }
 #summary { font-size: 25px; line-height: 30px; }
 #sponsors div { font: 19px/25px "Avenir Next", "Calibri", sans-serif; }
+
+
 
 /* Paint */
 
