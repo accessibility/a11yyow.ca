@@ -280,13 +280,13 @@ body > header #about_the_background_image a {
 #proposals_container {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
   overflow: auto;
-  margin-top: -350px;
+  margin-top: -375px;
 }
 #proposals_container div.surface {
   width: 9999px;
-  height: 900px;
+  height: 875px;
   overflow: hidden;
-  padding: 25px 20% 25px;
+  padding: 25px 16.5% 25px;
   box-sizing: content-box;
   text-align: right;
 }
@@ -295,20 +295,38 @@ article.proposal {
   background: hsl(0, 0%, 97%);
   outline: none;
   width: 700px;
-  height: 800px;
+  height: 825px;
   margin: 0 -175px;
   display: inline-block;
   vertical-align: top;
-  font: bold 15px/20px Consolas, Courier, monospace;
+  font: 15px/20px Consolas, Courier, monospace;
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
   border: 1px solid hsla(0, 0%, 0%, 0.25);
   padding: 124px 44px 44px;
   text-align: left;
-  transform: scale(0.5,0.5) translate(0px, 300px);
-  -webkit-transform: scale(0.5,0.5) translate(0px, 300px);
+  transform: scale(0.5,0.5) translate(0px, 325px);
+  -webkit-transform: scale(0.5,0.5) translate(0px, 325px);
   z-index: 1;
   transition: all 222ms ease-out, z-index 1ms linear;
   cursor: default;
+}
+
+article.proposal textarea,
+article.proposal input {
+  font-weight: bold;
+}
+
+article.proposal label,
+article.proposal div.commit,
+article.proposal *::-webkit-input-placeholder {
+  font-weight: normal;
+  color: hsla(0, 0%, 0%, 0.5);
+  transition: color 66ms linear;
+}
+
+article.proposal *:focus::-webkit-input-placeholder {
+  color: hsla(0, 0%, 0%, 0.25);
+  transition: color 66ms linear;
 }
 
 article.proposal.activated {
@@ -340,7 +358,7 @@ article.proposal.activated h2 {
 
 article.proposal h4 {
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 45px; right: 45px;
   height: 60px;
 }
@@ -366,7 +384,7 @@ article.proposal textarea {
 
 article.proposal input:not(:focus),
 article.proposal textarea:not(:focus) {
-  outline: 1px solid hsla(0, 0%, 0%, 0.1);
+  outline: 1px dotted hsla(0, 0%, 0%, 0.25);
 }
 
 article.proposal label {
@@ -389,4 +407,25 @@ article.proposal label {
 }
 #biography_input {
   min-height: 100px;
+}
+
+div.commit {
+  position: absolute; bottom: 50px; left: 50px; right: 50px;
+}
+
+div.commit p {
+  padding: 25px 0px 25px;
+  margin: 0;
+}
+div.commit button {
+  height: 32px;
+  line-height: 34px;
+  display: inline-block;
+  padding: 0 14px;
+  margin: -5px -1px -5px -3px;
+  box-sizing: content-box;
+  border: 2px solid hsla(0, 0%, 0%, 0.75);
+  border-radius: 4px;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
 }
