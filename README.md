@@ -1,4 +1,4 @@
-[![A11yYOW Logo](https://rawgithub.com/accessibility/a11yYOW.ca/master/logo.svg)](http://a11yYOW.ca)
+[![A11yYOW Logo](images/logo.png)](http://a11yYOW.ca)
 
 # A11yYOW Our Accessibility Unconference
 
