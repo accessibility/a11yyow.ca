@@ -1,344 +1,331 @@
-body{
-	font-family: arial;
-	/*background-color: #f3f3f3; 
-	color: #333;*/
-	margin: 10px;
-  	padding: 10px;	
+body {
+    font-family: arial;
+    margin: 10px;
+    padding: 10px;
+}
+a {
+    text-decoration: underline;
+    color: #2477BD
+}
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #2D5884
 }
 
-a{ text-decoration: underline; color: #2477BD }		
-a:hover, a:focus, a:active { text-decoration: none; color: #2D5884 }
-/*
-header {
-	background: #fff;
-	border-bottom: 1px solid #B68C2E;
+#skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
-
-header img{
-	padding: 0 1em;
+#skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
 }
-
-nav {
-	position:absolute;
-	top:140px;
-	left:200px;
-	text-transform: uppercase;
+nav a {
+    margin: 0 0.5em;
+    padding: 0.2em;
+    border: #FFF 1px solid;
+    outline: none;
+    text-decoration: none;
+    border-bottom: #D8CACA 3px solid;
+    letter-spacing: 0.1em;
 }
-*/
-
-#skip a
-{
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
+nav a:hover, nav a:focus, nav a:active {
+    background: #FFF;
+    border: #2D5884 1px solid;
+    border-bottom: #2D5884 5px solid;
+    border-radius: 4px;
 }
- 
-#skip a:focus
-{
-position:static;
-width:auto;
-height:auto;
-} 
-
-nav a{
-	margin: 0 0.5em;
-	padding: 0.2em;
-	border: #FFF 1px solid;
-	outline: none;
-	text-decoration: none;
-	border-bottom: #D8CACA 3px solid;
-	letter-spacing: 0.1em;
-}
-
-nav a:hover, nav a:focus, nav a:active{
-	background: #FFF;
-	border: #2D5884 1px solid;
-	border-bottom: #2D5884 5px solid;
-	border-radius: 4px;
-}
-
 /* paragraphs */
-p.error		{ 
-		color: #FF0000;
-		font-size: 8pt }
-p.toplinks		{ 
-		font-size: 8pt }
-		
-p.copyright		{ 
-		color: #000000;
-		font-size: xx-small;
-		text-align: center; }
-p.caption		{ 
-		color: #000000;
-		font-size: 8pt;
-		text-align: center;
-		font-style: italic }
-p.p1		{ font-family: arial;
-		color: #000000;
-		font-size: small }
-p.address		{ font-family: arial;
-		color: #000000;
-		font-size: 8pt;
-		text-align: center; }
-p.slogan		{ font-family: arial;
-		color: #000000;
-		font-size: 8pt;
-		text-align: center;
-		font-style: italic }
-p.name           { font-family: arial; 
-		color: #000000; 
-		text-align: center; 
-		font-size: 10pt;
-		font-weight: 600 }
-p.title           { font-family: arial; 
-		color: #666666; 
-		text-align: Left; 
-		font-size: 14pt;
-		font-weight: bold;
-		text-indent: 20px }
+
+p.error {
+    color: #FF0000;
+    font-size: 8pt
+}
+p.toplinks {
+    font-size: 8pt
+}
+p.copyright {
+    color: #000000;
+    font-size: xx-small;
+    text-align: center;
+}
+p.caption {
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-style: italic
+}
+p.p1 {
+    font-family: arial;
+    color: #000000;
+    font-size: small
+}
+p.address {
+    font-family: arial;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+}
+p.slogan {
+    font-family: arial;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-style: italic
+}
+p.name {
+    font-family: arial;
+    color: #000000;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600
+}
+p.title {
+    font-family: arial;
+    color: #666666;
+    text-align: Left;
+    font-size: 14pt;
+    font-weight: bold;
+    text-indent: 20px
+}
 table.data {
-  background-color:#FFFFFF;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: left; 
-  }
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+}
 tr.dataheader {
-  background-color:#D2D2D2;
-  color: #000000;
-  font-size: 8pt;
-    
-  text-align: center; 
-  font-weight: 600
-  }
+    background-color: #D2D2D2;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-weight: 600
+}
 td.headers {
-  background-color:#723031;
-  color: #FFFFFF;
-  font-size: 10pt;
-  
-  text-align: left; 
-  
-  }
+    background-color: #723031;
+    color: #FFFFFF;
+    font-size: 10pt;
+    text-align: left;
+}
 td.headers2 {
-  color: #FFFFFF;
-  font-size: 8pt;
-  
-  text-align: left; 
- 	background: #723031 url(/en/images/gradiant_blue.jpg); background-repeat: repeat-x; background-position:top center;
+    color: #FFFFFF;
+    font-size: 8pt;
+    text-align: left;
+    background: #723031 url(/en/images/gradiant_blue.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
 }
 td.headers3 {
-  color: #FFFFFF;
-  font-size: 8pt;
-  font-weight: bold;
-  
-  padding: 2px;
-	background: #F17424 url(/en/images/gradiant_orange.jpg); background-repeat: repeat-x; background-position:top center;
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 2px;
+    background: #F17424 url(/en/images/gradiant_orange.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
 }
 p.headers2 {
-  color: #FFFFFF;
-  	font-size: 10pt;
-		font-weight: bold;
-  
-  text-align: left; 
-  padding: 5px;
-  margin: 0;
- 	background: #723031 url(/en/images/gradiant_blue.jpg); background-repeat: repeat-x; background-position:top center;
- 	}
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    background: #723031 url(/en/images/gradiant_blue.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+}
 /* These elements set the image and properties for Ordered and Unordered lists. */
-ul.imaged       { list-style-image: url('/en/images/bullet-arrow-white.gif')}
-ul.media       { list-style-image: url('/en/images/news_bullet.gif');
-	margin-left: 0;
-	padding-left: 20px;
-	}
-ul.media li           {  
-		color: #000000; 
-		background-color: #EDF4F8;
-		text-align: Left; 
-		padding: 5px;
-		
-		text-decoration: none;
-		border-bottom:5px solid #ffffff;
-		}
-ul           {  
-		color: #000000;
-		text-decoration: none;}
-ul li           {  
-		color: #000000; 
-		text-align: Left; 
-		padding: 5px;
-		padding-bottom: 5px;
-		
-		text-decoration: none;
-		}
-ol           {  
-		color: #000000;
-		text-decoration: none;}
-ol li           {  
-		color: #000000; 
-		text-align: Left; 
-		padding: 5px;
-		padding-bottom: 5px;
-		text-decoration: none;
-		}
-ul.smaller           { font-family: arial; font-size: 10pt; color: #000000; }
-li.smaller           { font-family: arial; font-size: 10pt; color: #000000; text-align: Left; padding: 5px }
 
-h1, h2, h3, h4, h5, h6{
-	color: #FFFFFF; 
-	background-color: #2477BD;	
-	padding: 0.25em;
-	text-align: left; 
-	font-weight: normal;	
+ul.imaged {
+    list-style-image: url('/en/images/bullet-arrow-white.gif')
 }
-
-
-h1 {  
-	color: #FFFFFF; 
+ul.media {
+    list-style-image: url('/en/images/news_bullet.gif');
+    margin-left: 0;
+    padding-left: 20px;
 }
-
+ul.media li {
+    color: #000000;
+    background-color: #EDF4F8;
+    text-align: Left;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 5px solid #ffffff;
+}
+ul {
+    color: #000000;
+    text-decoration: none;
+}
+ul li {
+    color: #000000;
+    text-align: Left;
+    padding: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+ol {
+    color: #000000;
+    text-decoration: none;
+}
+ol li {
+    color: #000000;
+    text-align: Left;
+    padding: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+ul.smaller {
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+}
+li.smaller {
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+    text-align: Left;
+    padding: 5px
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    background-color: #2477BD;
+    padding: 0.25em;
+    text-align: left;
+    font-weight: normal;
+}
+h1 {
+    color: #FFFFFF;
+}
 h1.table-header {
-  color: #FFFFFF;
-  font-size: 8pt;
-  
-  font-weight: bold;
-  text-align: left; 
-  border:0px;
-  padding: 0px;
- 	background: none;
- 	margin-bottom: 0px;
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: left;
+    border: 0px;
+    padding: 0px;
+    background: none;
+    margin-bottom: 0px;
 }
-
-
 td.accountActivityHead {
-  background-color:#A5D3E4;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: center; 
-  width: 125px; 
-  font-weight: 600;
-  }
+    background-color: #A5D3E4;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    width: 125px;
+    font-weight: 600;
+}
 td.viewrestaurantHead {
-  background-color:#A5D3E4;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: left; 
-  font-weight: 600;
-  width: 125px; 
-  }
+    background-color: #A5D3E4;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+    font-weight: 600;
+    width: 125px;
+}
 td.viewrestaurantHead2 {
-  background-color:#A5D3E4;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: left; 
-  font-weight: 600;
-  }
+    background-color: #A5D3E4;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+    font-weight: 600;
+}
 td.viewrestaurantBody {
-  background-color:#FFFFFF;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: left; 
-  }
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+}
 td.registrationHead {
-  background-color:#399CC1;
-  color: #FFFFFF;
-  font-size: 10pt;
-  
-  text-align: left; 
-  font-weight: 600;
-  }
+    background-color: #399CC1;
+    color: #FFFFFF;
+    font-size: 10pt;
+    text-align: left;
+    font-weight: 600;
+}
 td.registrationLeft {
-  background-color:#D2D2D2;
-  color: #2D5884;
-  font-size: 8pt;
-  
-  text-align: left;
-  height: 30px;  
-  }
+    background-color: #D2D2D2;
+    color: #2D5884;
+    font-size: 8pt;
+    text-align: left;
+    height: 30px;
+}
 td.registrationRight {
-  background-color:#FFFFFF;
-  color: #000000;
-  font-size: 8pt;
-  
-  text-align: left; 
-  }
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+}
 td.MainBodyIndex {
-  background-color:#EEEEEE;
-  }
+    background-color: #EEEEEE;
+}
 td.MainBody {
-  background-color:#FFFFFF;
-  }
+    background-color: #FFFFFF;
+}
 table.datatable td {
-  font-size: 8pt;
-    
-  text-align: center;
-  border-color:#000000;
-  border-style: solid;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  }
+    font-size: 8pt;
+    text-align: center;
+    border-color: #000000;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
 table.datatable th {
-	background: #c0c0c0;
-  font-size: 8pt;
-    
-  text-align: center;
-  border-color:#000000;
-  border-style: solid;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+    background: #c0c0c0;
+    font-size: 8pt;
+    text-align: center;
+    border-color: #000000;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 table.NationalCalendar tbody td {
-	background-color: #EDF4F8;
-	font-family: Verdana; 
-	color:#000000;
-	text-align: right; 
-	font-size: 10px;
-	padding: 3px;
-	vertical-align: top;
-	width: 100px;
-	height: 90px;
+    background-color: #EDF4F8;
+    font-family: Verdana;
+    color: #000000;
+    text-align: right;
+    font-size: 10px;
+    padding: 3px;
+    vertical-align: top;
+    width: 100px;
+    height: 90px;
 }
 table.NationalCalendar tbody th {
-	background-color: #723031;
-	font-family: Verdana; 
-	color:#FFFFFF;
-	text-align: center; 
-	padding: 3px;
-	vertical-align: top;
+    background-color: #723031;
+    font-family: Verdana;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3px;
+    vertical-align: top;
 }
-
-table.NationalCalendarDetails p{
-	margin: 0.5em;
+table.NationalCalendarDetails p {
+    margin: 0.5em;
 }
-
 table.NationalCalendarDetails tbody td {
-	background-color: #F4EEE4;
-	font-family: Verdana; 
-	color:#000000;
-	text-align: left; 
-	padding: 3px;
+    background-color: #F4EEE4;
+    font-family: Verdana;
+    color: #000000;
+    text-align: left;
+    padding: 3px;
 }
 table.NationalCalendarDetails tbody th {
-	background-color: #723031;
-	font-family: Verdana; 
-	color:#FFFFFF;
-	text-align: center; 
-	padding: 3px;
-	vertical-align: top;
-	
+    background-color: #723031;
+    font-family: Verdana;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3px;
+    vertical-align: top;
 }
-
-input.submit{
+input.submit {
     font-size: 1.5em;
     font-weight: bold;
     height: 2em;
@@ -346,167 +333,147 @@ input.submit{
     margin: 2em 0;
     width: 25%;
 }
-
-
 table.form th {
-	background-color: #ffffff;
-	font-family: Verdana; 
-	color:#000000;
-	font-weight : bold;
-	text-align: left; 
-	font-size: 10pt;
-	border-bottom: 1px solid #EDF4F8;
-	padding: 3px;
+    background-color: #ffffff;
+    font-family: Verdana;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #EDF4F8;
+    padding: 3px;
 }
 table.form td {
-	background-color: #ffffff;
-	font-family: Verdana; 
-	color:#000000;
-	text-align: left; 
-	font-size: 10pt;
-	border-bottom: 1px solid #EDF4F8;
-	padding: 3px;
+    background-color: #ffffff;
+    font-family: Verdana;
+    color: #000000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #EDF4F8;
+    padding: 3px;
 }
 table.jobpostings th {
-	background-color: #FFFFFF;
-	font-family: Verdana; 
-	color:#000000;
-	text-align: left; 
-	font-size: 10pt;
-	border-bottom: 1px solid #723031;
-	padding: 10px;
-		vertical-align: top;
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    color: #000000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #723031;
+    padding: 10px;
+    vertical-align: top;
 }
 table.jobpostings td {
-	background-color: #EDF4F8;
-	font-family: Verdana; 
-	color:#000000;
-	text-align: left; 
-	font-size: 10pt;
-	border-bottom: 1px solid #723031;
-	padding: 10px;
-		vertical-align: top;
+    background-color: #EDF4F8;
+    font-family: Verdana;
+    color: #000000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #723031;
+    padding: 10px;
+    vertical-align: top;
 }
-table.form select        { 
-	font-family: Verdana; 
-	background: #EDF4F8;
-	color:#000000;
-	
-	}
-table.form input { 
-	font-family: Verdana; 
-	background: #EDF4F8;
-	color:#000000;
-	
-	}
+table.form select {
+    font-family: Verdana;
+    background: #EDF4F8;
+    color: #000000;
+}
+table.form input {
+    font-family: Verdana;
+    background: #EDF4F8;
+    color: #000000;
+}
 table.form input.submit {
-	background-color : #723031;
-	color:#FFFFFF;
-	font-weight : bold;
-	border: 1px solid #723031;
-	cursor : hand;
-	}
+    background-color: #723031;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #723031;
+    cursor: hand;
+}
 fieldset {
-border: 1px solid #723031;
-background: #FFFFFF;
+    border: 1px solid #723031;
+    background: #FFFFFF;
 }
 legend {
-font-family: Verdana; 
-font-size: 10pt;
-color: #FFFFFF;
-background: #723031;
-border: 1px solid #723031;
-padding: 2px 6px;
-width: 150px;
-text-align: center;
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #FFFFFF;
+    background: #723031;
+    border: 1px solid #723031;
+    padding: 2px 6px;
+    width: 150px;
+    text-align: center;
 }
 td.bottom-wave {
-	background: #F0F9FE url(/en/images/bottom_wave.jpg); background-repeat: no-repeat;
-	
-	color: #000000;
-	font-size: 7pt;
-	text-align: right; 
-	vertical-align: bottom;
-	height:150px;
-	padding-right: 30px;
-	padding-bottom: 30px;
-	text-align: right; 
+    background: #F0F9FE url(/en/images/bottom_wave.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 7pt;
+    text-align: right;
+    vertical-align: bottom;
+    height: 150px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: right;
 }
 td.top-wave {
-	background: #F0F9FE url(TorontoSkyline.jpg); background-repeat: no-repeat; background-position:bottom center;
-	
-	color: #000000;
-	font-size: 16pt;
-	font-family: verdana;
-	font-weight: bold;
-	padding: 10px;
-	text-align: right; 
-	vertical-align: top;
-	height:225px;
+    background: #F0F9FE url(TorontoSkyline.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    color: #000000;
+    font-size: 16pt;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    height: 225px;
 }
 td.sidebox {
-	background-color: #F0F9FE; 
-	
-	color: #000000;
-	font-size: 8pt;
-	text-align: left; 
-	vertical-align: top;
-	border-bottom: 1px solid #723031;
+    background-color: #F0F9FE;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #723031;
 }
 td.sidebox-orange {
-	background-color: #F0F9FE; 
-	
-	color: #000000;
-	font-size: 8pt;
-	text-align: left; 
-	vertical-align: top;
-	border-bottom: 1px solid #F17424;
+    background-color: #F0F9FE;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #F17424;
 }
 
-/*
-.conf_menu {  font-size: small; color: #723031; text-decoration: none; }
-.conf_menu a {  font-size: small; color: #723031; text-decoration: none; }
-.conf_menu a:visited {  font-size: small; color: #723031; text-decoration: none; }
-.conf_menu a:hover {  font-size: small; color: #FFFFFF; background-color: #723031; text-decoration: none; }
-.conf_menu-selected {  font-size: small; color: #723031; text-decoration: none; background-color: #399CC1; }
-.conf_menu p { 	border-bottom: 1px solid #723031; background-color: #F0F9FE; text-align: center;}
-*/
-
-#sponsors{
-	background: #FFF;
-	text-align: center; 
-	padding: 0.5em 3em; 
-	border-top: 1px solid #B68C2E;
+#sponsors {
+    background: #FFF;
+    text-align: center;
+    padding: 0.5em 3em;
+    border-top: 1px solid #B68C2E;
 }
-
 #sponsors a {
-	text-decoration: none; 
-	border-bottom: #D8CACA 5px solid;
-	border-radius: 5px;	
-	margin: 0.2em 0.5em;
+    text-decoration: none;
+    border-bottom: #D8CACA 5px solid;
+    border-radius: 5px;
+    margin: 0.2em 0.5em;
 }
-
-#sponsors a:hover, #sponsors a:focus, #sponsors a:active  {
-	text-decoration: none; 
-	border-bottom: #2D5884 5px solid;
-	outline: none;
+#sponsors a:hover, #sponsors a:focus, #sponsors a:active {
+    text-decoration: none;
+    border-bottom: #2D5884 5px solid;
+    outline: none;
 }
-
 #sponsors img {
-	padding: 0.1em 0.2em;
-	margin: 1.5em 0.5em 0.5em;
+    padding: 0.1em 0.2em;
+    margin: 1.5em 0.5em 0.5em;
 }
-
-.announcement{
-	font-size: 1.5em;
-	padding: 0 2em;
+.announcement {
+    font-size: 1.5em;
+    padding: 0 2em;
 }
-
-.center-align{
-	text-align: center;
+.center-align {
+    text-align: center;
 }
-
-.full_width{
-	width: 100%;
-	height: auto;
+.full_width {
+    width: 100%;
+    height: auto;
 }
