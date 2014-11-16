@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Location
-permalink: /location/
+permalink: fr/location/
 redirect_from:
   - /venue/
 ---
