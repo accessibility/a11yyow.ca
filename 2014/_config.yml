@@ -1,0 +1,26 @@
+# Site settings
+title: Ottawa's accessibility unconference
+email: a11yOttawa@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A11yYOW is Ottawa's Accessibility Unconference and is a participant-driven
+  event, also known as a BarCamp. Participants drive the day, including
+  developing the session schedule on the morning of the event.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://a11yyow.ca" # the base hostname & protocol for your site
+twitter_username: a11yYOW
+github_username:  accessibility
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - README.md
+  - CNAME
+  - script
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+
+gems:
+  - jekyll-redirect-from

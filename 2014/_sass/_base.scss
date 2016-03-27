@@ -1,0 +1,211 @@
+body {
+    font-family: arial;
+    margin: 10px;
+    padding: 10px;
+}
+a {
+    text-decoration: underline;
+    color: #2477BD
+}
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #2D5884
+}
+
+#skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+nav a {
+    margin: 0 0.5em;
+    padding: 0.2em;
+    border: #FFF 1px solid;
+    outline: none;
+    text-decoration: none;
+    border-bottom: #D8CACA 3px solid;
+    letter-spacing: 0.1em;
+}
+nav a:hover, nav a:focus, nav a:active {
+    background: #FFF;
+    border: #2D5884 1px solid;
+    border-bottom: #2D5884 5px solid;
+    border-radius: 4px;
+}
+/* paragraphs */
+
+p.error {
+    color: #FF0000;
+    font-size: 8pt
+}
+p.toplinks {
+    font-size: 8pt
+}
+p.copyright {
+    color: #000000;
+    font-size: xx-small;
+    text-align: center;
+}
+p.caption {
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-style: italic
+}
+p.p1 {
+    font-family: arial;
+    color: #000000;
+    font-size: small
+}
+p.address {
+    font-family: arial;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+}
+p.slogan {
+    font-family: arial;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-style: italic
+}
+p.name {
+    font-family: arial;
+    color: #000000;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600
+}
+p.title {
+    font-family: arial;
+    color: #666666;
+    text-align: Left;
+    font-size: 14pt;
+    font-weight: bold;
+    text-indent: 20px
+}
+table.data {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 8pt;
+    text-align: left;
+}
+tr.dataheader {
+    background-color: #D2D2D2;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    font-weight: 600
+}
+td.headers {
+    background-color: #723031;
+    color: #FFFFFF;
+    font-size: 10pt;
+    text-align: left;
+}
+td.headers2 {
+    color: #FFFFFF;
+    font-size: 8pt;
+    text-align: left;
+    background: #723031 url(/en/images/gradiant_blue.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+td.headers3 {
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 2px;
+    background: #F17424 url(/en/images/gradiant_orange.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+p.headers2 {
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    background: #723031 url(/en/images/gradiant_blue.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+/* These elements set the image and properties for Ordered and Unordered lists. */
+
+ul.imaged {
+    list-style-image: url('/en/images/bullet-arrow-white.gif')
+}
+ul.media {
+    list-style-image: url('/en/images/news_bullet.gif');
+    margin-left: 0;
+    padding-left: 20px;
+}
+ul.media li {
+    color: #000000;
+    background-color: #EDF4F8;
+    text-align: Left;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 5px solid #ffffff;
+}
+ul {
+    color: #000000;
+    text-decoration: none;
+}
+ul li {
+    color: #000000;
+    text-align: Left;
+    padding: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+ol {
+    color: #000000;
+    text-decoration: none;
+}
+ol li {
+    color: #000000;
+    text-align: Left;
+    padding: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+ul.smaller {
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+}
+li.smaller {
+    font-family: arial;
+    font-size: 10pt;
+    color: #000000;
+    text-align: Left;
+    padding: 5px
+}
+h1 {
+    color: #FFFFFF;
+    background-color: #2477BD;
+    padding: 0.25em;
+    text-align: left;
+    font-weight: normal;
+    font-size:30px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #000000;
+    background-color: #A0C9E8;
+    padding: 0.25em;
+    text-align: left;
+    font-weight: normal;
+    font-size:24px;
+}

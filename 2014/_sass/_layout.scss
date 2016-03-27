@@ -1,0 +1,275 @@
+h1.table-header {
+    color: #fff;
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: left;
+    border: 0;
+    padding: 0;
+    background: none;
+    margin-bottom: 0;
+}
+td.accountActivityHead {
+    background-color: #a5d3e4;
+    color: #000;
+    font-size: 8pt;
+    text-align: center;
+    width: 125px;
+    font-weight: 600;
+}
+td.viewrestaurantHead {
+    background-color: #a5d3e4;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+    font-weight: 600;
+    width: 125px;
+}
+td.viewrestaurantHead2 {
+    background-color: #a5d3e4;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+    font-weight: 600;
+}
+td.viewrestaurantBody {
+    background-color: #fff;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+}
+td.registrationHead {
+    background-color: #399cc1;
+    color: #fff;
+    font-size: 10pt;
+    text-align: left;
+    font-weight: 600;
+}
+td.registrationLeft {
+    background-color: #d2d2d2;
+    color: #2d5884;
+    font-size: 8pt;
+    text-align: left;
+    height: 30px;
+}
+td.registrationRight {
+    background-color: #fff;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+}
+td.MainBodyIndex {
+    background-color: #eee;
+}
+td.MainBody {
+    background-color: #fff;
+}
+table.datatable td {
+    font-size: 8pt;
+    text-align: center;
+    border-color: #000;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+table.datatable th {
+    background: #c0c0c0;
+    font-size: 8pt;
+    text-align: center;
+    border-color: #000;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+table.NationalCalendar tbody td {
+    background-color: #edf4f8;
+    font-family: Verdana;
+    color: #000;
+    text-align: right;
+    font-size: 10px;
+    padding: 3px;
+    vertical-align: top;
+    width: 100px;
+    height: 90px;
+}
+table.NationalCalendar tbody th {
+    background-color: #723031;
+    font-family: Verdana;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    vertical-align: top;
+}
+table.NationalCalendarDetails p {
+    margin: 0.5em;
+}
+table.NationalCalendarDetails tbody td {
+    background-color: #f4eee4;
+    font-family: Verdana;
+    color: #000;
+    text-align: left;
+    padding: 3px;
+}
+table.NationalCalendarDetails tbody th {
+    background-color: #723031;
+    font-family: Verdana;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    vertical-align: top;
+}
+input.submit {
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 2em;
+    letter-spacing: 0.2em;
+    margin: 2em 0;
+    width: 25%;
+}
+table.form th {
+    background-color: #fff;
+    font-family: Verdana;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #edf4f8;
+    padding: 3px;
+}
+table.form td {
+    background-color: #fff;
+    font-family: Verdana;
+    color: #000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #edf4f8;
+    padding: 3px;
+}
+table.jobpostings th {
+    background-color: #fff;
+    font-family: Verdana;
+    color: #000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #723031;
+    padding: 10px;
+    vertical-align: top;
+}
+table.jobpostings td {
+    background-color: #edf4f8;
+    font-family: Verdana;
+    color: #000;
+    text-align: left;
+    font-size: 10pt;
+    border-bottom: 1px solid #723031;
+    padding: 10px;
+    vertical-align: top;
+}
+table.form select {
+    font-family: Verdana;
+    background: #edf4f8;
+    color: #000;
+}
+table.form input {
+    font-family: Verdana;
+    background: #edf4f8;
+    color: #000;
+}
+table.form input.submit {
+    background-color: #723031;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #723031;
+    cursor: hand;
+}
+fieldset {
+    border: 1px solid #723031;
+    background: #fff;
+}
+legend {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #fff;
+    background: #723031;
+    border: 1px solid #723031;
+    padding: 2px 6px;
+    width: 150px;
+    text-align: center;
+}
+td.bottom-wave {
+    background-repeat: no-repeat;
+    color: #000;
+    font-size: 7pt;
+    text-align: right;
+    vertical-align: bottom;
+    height: 150px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+td.top-wave {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    color: #000;
+    font-size: 16pt;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    height: 225px;
+}
+td.sidebox {
+    background-color: #f0f9fe;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #723031;
+}
+td.sidebox-orange {
+    background-color: #f0f9fe;
+    color: #000;
+    font-size: 8pt;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #f17424;
+
+}
+#sponsors {
+    background: #fff;
+    text-align: center;
+    padding: 0.5em 3em;
+    /* border-top: 1px solid #b68c2e; */
+}
+
+#sponsors img {
+    padding: 0.1em 0.2em;
+    margin: 1.5em 0.5em 0.5em;
+
+}
+.announcement {
+    font-size: 1.5em;
+    padding: 0 2em;
+}
+.center-align {
+    text-align: center;
+}
+.full_width {
+    width: 100%;
+    height: auto;
+
+}
+.aa-sponsor {
+    width: 250px;
+}
+.a-sponsor {
+    width: 100px;
+}
+.speaker-img {
+    float: left;
+    margin-right: 15px;
+}
