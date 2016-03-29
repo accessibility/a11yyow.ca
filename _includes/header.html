@@ -1,14 +1,20 @@
-<div id="skip"><a href="#content">Skip to Main Content</a></div>
+<a class="sr-only sr-only-focusable" href="#content">Skip to Main Content</a>
 <header role="banner">
-  <a href="/">
-    <img src="{{ "/images/logo.png" | prepend: site.baseurl }}" alt="A11yYOW Accessibility Camp Ottawa">
-  </a>
-  <nav role="navigation" id="menu">
-      <a href="/">Home</a>
-      <a href="/register/">Register</a>
-      <a href="/presentations/">Presentations</a>
-      <a href="/schedule/">Schedule</a>
-      <a href="/faq/">F.A.Q.</a>
-      <a href="/contact/" class="last">Contact</a>
-  </nav>
+    <a href="/">
+        <svg style="width: 100%; height: auto;" focusable="false">
+            <image xlink:href="{{ " /images/logo.svg " | prepend: site.baseurl }}" src="{{ " /images/logo.png " | prepend: site.baseurl }}" class="img-responsive" alt="A11yYOW Accessibility Camp Ottawa" width="500" height="72">
+        </svg>
+    </a>
+    <nav role="navigation">
+        <ul class="list-inline menu" role="menubar">
+<li><a href="/">Home</a></li>
+<li><a href="/register/">Register</a></li>
+<li><a href="/schedule/">Schedule</a></li>
+<li><a href="/presentations/">Presentations</a></li>
+<li><a href="/location/">Location</a></li>
+<li><a href="/faq/">F.A.Q.</a></li>
+<li><a href="/contact/" class="last">Contact</a></li>
+<li><a href="/2014/">2014 Edition</a></li>
+        </ul>
+    </nav>
 </header>
