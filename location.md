@@ -8,8 +8,7 @@ redirect_from:
 
 ## Building
 
-Activities will take place on the 4th and 5th floors of the
-[Human Computer Interaction Building (HCI)](http://carleton.ca/campus/map/#HC)
+GAAD celebration event will be held in [Canal Building (Room 3101)](http://carleton.ca/campus/map/#CB)
 at Carleton University, in Ottawa, Ontario.
 
 ## Street Address
@@ -18,7 +17,7 @@ at Carleton University, in Ottawa, Ontario.
 
 ## Map
 
-[![Carleton Campus map showing HCI building highlighted](/images/hci_map.png)](https://www.google.com/maps/place/Human+Computer+Interaction+Bldg,+Carleton+University,+Ottawa,+ON+K1S,+Canada)
+[![Carleton Campus map showing HCI building highlighted](/images/cb_map.png)](https://goo.gl/maps/iVa3voCE5SH2)
 
 ## Public transit
 
@@ -35,9 +34,7 @@ Carleton University is served by the following [OCTranspo routes](http://www.oct
 
 ## Parking
 
-Parking Lot #1 on Library Road. There are other parking lots across the
-[Carleton University campus](http://carleton.ca/campus/).
+Parking Lot #1 on Library Road is few meters before the building. Parking Lot #2 is behind the building on Campus Avenue. R4 is right after the building (available for visitors after 5pm). There are other parking lots across the [Carleton University campus](http://carleton.ca/campus/).
 
 Parking can be paid using either the pay and display machines or the
-text-to-park service iParked.ca. The parking weekend rate (Saturday or Sunday)
-is $3.00 FLAT RATE (All-Day)
+text-to-park service iParked.ca. The [parking evening rate is $8.00] (https://carleton.ca/parking/visitors/parking-rates/)
