@@ -22,5 +22,5 @@ exclude:
   - Gemfile.lock
   - Rakefile
 
-gems:
+plugins:
   - jekyll-redirect-from
