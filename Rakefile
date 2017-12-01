@@ -1,6 +1,6 @@
-require "html/proofer"
+require "html-proofer"
 
 task :test do
   sh "bundle exec jekyll build"
-  HTML::Proofer.new("./_site/").run
+  HTMLProofer.check_directory("./_site/").run
 end
