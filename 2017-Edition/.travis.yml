@@ -1,0 +1,8 @@
+language: ruby
+script: "./script/cibuild"
+notifications:
+  email: false
+branches:
+  only:
+    - gh-pages
+    - /.*/
