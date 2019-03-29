@@ -12,4 +12,4 @@ GAAD celebration event will be held in Richcraft Hall at Carleton University, in
 
 ## Street Address
 
-1125 Colonel By Drive, Ottawa, ON, K1S 5B6
+9376 University Dr, Ottawa, Ontario, K1S 5B6
