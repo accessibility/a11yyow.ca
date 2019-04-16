@@ -1,11 +1,13 @@
 ---
 layout: default
 title: About a11yYOW
-permalink: /About/
+permalink: /about/
 redirect_from:
   - /about.html
 ---
 The Ottawa Digital Accessibility and Inclusive Design #a11yYOW is about regularly bringing together our accessibility community to share ideas, best practices, our experiences and hopefully to raise the bar.
+
+You can reach the organizers by email at a11yottawa@gmail.com
 
 Check a11yYOW events and activities on Meetup [a11yYOW Meetup](https://www.meetup.com/a11yOttawa/)
 
