@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About a11yYOW
-permalink: /About/
+permalink: /about/
 redirect_from:
   - /about.html
 ---
