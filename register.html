@@ -13,6 +13,24 @@ redirect_from:
   <li> Register by <a href="https://www.meetup.com/a11yOttawa/events/260184103/">RSVP on Meetup.com website</a></li>
   <li>Get a <a href="https://www.eventbrite.ca/e/global-accessibility-awareness-day-gaad-ottawa-2019-tickets-61323551393?aff=eac2">ticket on Eventbrite</a></li>
 </ul>
+
 <div id="eventbrite-widget-container-61323551393"></div>
-<script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script> 
-<script type="text/javascript"> var exampleCallback = function() { console.log('Order complete!'); }; window.EBWidgets.createWidget({ widgetType: 'checkout', eventId: '61323551393', iframeContainerId:'eventbrite-widget-container-61323551393'</script>
+
+<script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '61323551393',
+        iframeContainerId: 'eventbrite-widget-container-61323551393',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
